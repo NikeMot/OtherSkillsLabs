@@ -4,14 +4,13 @@
 
 The `OtherSkillsLabs` repository contains hands-on labs for professional capability areas that sit outside the main infrastructure lab programme.
 
-The repository focuses on four technical topics:
+The repository focuses on three technical topics:
 
 * Mac / Apple administration
 * SQL and databases
 * AI / LLM engineering
-* Cybersecurity
 
-Every lab also develops the non-technical leverage skills needed to progress from Service Desk into stronger infrastructure, platform, security, data, and AI-enabled operations roles:
+Every lab also develops the non-technical leverage skills needed to progress from Service Desk into stronger infrastructure, platform, data, and AI-enabled operations roles:
 
 * structured thinking
 * social and conversation skills
@@ -29,7 +28,7 @@ The aim is not just to learn tools. The aim is to create proof that technical wo
 
 The goals of this repository are to:
 
-* build practical capability in Apple administration, SQL/databases, AI, and cybersecurity
+* build practical capability in Apple administration, SQL/databases, and AI
 * practise production-style troubleshooting and evidence collection
 * turn every lab into interview, CV, LinkedIn, and recruiter-facing proof
 * improve written and verbal communication around technical work
@@ -45,7 +44,6 @@ The goals of this repository are to:
 | Mac / Apple Administration | Not started | macOS support, FileVault, Keychain, MDM, Apple Business Manager, profiles, certificates, enterprise troubleshooting |
 | SQL and Databases | Not started | SQL queries, relational modelling, joins, aggregation, data quality, indexing concepts, backup/recovery awareness, operational database thinking |
 | AI / LLM Engineering | Not started | prompt engineering, ticket triage, RAG, evaluation, hallucination checks, AI-assisted operations |
-| Cybersecurity | Not started | blue team, identity security, logging, access review, TLS/PKI, hardening, reporting |
 
 ---
 
@@ -57,7 +55,6 @@ The goals of this repository are to:
 | `01-mac-apple-administration/` | macOS and Apple enterprise administration labs |
 | `02-sql-databases/` | SQL, relational databases, and operational database labs |
 | `03-ai/` | AI, LLM, prompt engineering, RAG, and AI operations labs |
-| `04-cybersecurity/` | Defensive security and blue-team labs |
 
 The numbered folders represent topic areas. Lab folders inside each topic should use lowercase, hyphenated names, for example:
 
@@ -70,9 +67,6 @@ The numbered folders represent topic areas. Lab folders inside each topic should
 
 03-ai/
 └── lab-01-ai-assisted-ticket-triage/
-
-04-cybersecurity/
-└── lab-01-user-access-review/
 ```
 
 ---
@@ -84,7 +78,6 @@ Each lab has one primary technical topic:
 1. Mac / Apple Administration
 2. SQL and Databases
 3. AI
-4. Cybersecurity
 
 Every lab must also include these leverage layers:
 
@@ -145,4 +138,4 @@ All examples should use fictional data, personal lab data, or safely sanitised o
 
 ## Current Status
 
-Repository structure updated to include four topic areas: Mac / Apple administration, SQL and databases, AI, and cybersecurity.
+Repository structure updated to focus on three topic areas: Mac / Apple administration, SQL and databases, and AI.
