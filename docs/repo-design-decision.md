@@ -10,22 +10,22 @@ Top-level topic folders:
 01-mac-apple-administration/
 02-sql-databases/
 03-ai/
-04-cybersecurity/
 docs/
 ```
 
 ## Reason
 
-This repository is not a tool-by-tool infrastructure sequence. It is a professional capability repository built around four technical topic areas:
+This repository is not a tool-by-tool infrastructure sequence. It is a professional capability repository built around three technical topic areas:
 
 1. Mac / Apple Administration
 2. SQL and Databases
 3. AI
-4. Cybersecurity
 
 The folder structure therefore follows the topics of the lab programme rather than the tools used inside individual labs.
 
-Mac / Apple administration is first because it directly supports mixed-estate enterprise support skills. SQL and databases are second because they strengthen data investigation, reporting, operational evidence, and support analysis. AI remains third as an automation and reasoning multiplier. Cybersecurity remains part of the track as a defensive operational capability.
+Mac / Apple administration is first because it directly supports mixed-estate enterprise support skills. SQL and databases are second because they strengthen data investigation, reporting, operational evidence, and support analysis. AI remains third as an automation and reasoning multiplier.
+
+Cybersecurity is intentionally not included in this repository because it will be handled in the networking path instead.
 
 ## Naming Convention
 
@@ -35,7 +35,6 @@ Use numbered, lowercase, hyphenated folder names:
 01-topic-name/
 02-topic-name/
 03-topic-name/
-04-topic-name/
 ```
 
 Individual labs should also use lowercase, hyphenated names:
@@ -44,7 +43,6 @@ Individual labs should also use lowercase, hyphenated names:
 lab-01-enterprise-mac-access-issue/
 lab-01-query-support-ticket-data/
 lab-01-ai-assisted-ticket-triage/
-lab-01-user-access-review/
 ```
 
 ## Lab Design Standard
