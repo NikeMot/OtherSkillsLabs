@@ -9,7 +9,7 @@ Use this template for every lab in this repository. Adapt the wording to suit th
 ## 1. Lab Summary
 
 **Lab:**
-**Topic area:** Mac Apple Administration / SQL and Databases / AI / Cybersecurity
+**Topic area:** Mac Apple Administration / SQL and Databases / AI
 **Difficulty:** Beginner / Intermediate / Advanced
 **Status:** Not started / In progress / Completed / Blocked
 
@@ -156,8 +156,6 @@ For Mac labs, include device, profile, configuration, or support evidence.
 For SQL and database labs, include input data, query results, schema checks, row counts, data quality checks, or explain-plan evidence where useful.
 
 For AI labs, include expected output versus actual output.
-
-For cybersecurity labs, include defensive evidence, scope notes, and safe sanitisation.
 
 ---
 
