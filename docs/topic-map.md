@@ -2,13 +2,12 @@
 
 ## Technical Topics
 
-This repository has four technical topic areas:
+This repository has three technical topic areas:
 
 ```text
 01-mac-apple-administration/
 02-sql-databases/
 03-ai/
-04-cybersecurity/
 ```
 
 Every lab also includes thinking, social skill, branding, interview technique, and personal development outputs.
@@ -72,25 +71,6 @@ Planned lab themes:
 
 ---
 
-## 04 — Cybersecurity
-
-Planned lab themes:
-
-1. User access review
-2. Sign-in and MFA log review
-3. Windows security event review
-4. Linux authentication log review
-5. TLS certificate troubleshooting
-6. Endpoint alert triage
-7. Least privilege review
-8. Security baseline review
-9. Identity group review
-10. Security communication and reporting
-11. Defensive escalation evidence
-12. Production security reflection
-
----
-
 ## Naming Convention
 
 Use lowercase, hyphenated folder names.
@@ -101,7 +81,6 @@ Examples:
 01-mac-apple-administration/lab-01-enterprise-mac-access-issue/
 02-sql-databases/lab-01-query-support-ticket-data/
 03-ai/lab-01-ai-assisted-ticket-triage/
-04-cybersecurity/lab-01-user-access-review/
 ```
 
 ## Completion Standard
