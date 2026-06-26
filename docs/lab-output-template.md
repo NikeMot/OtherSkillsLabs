@@ -9,7 +9,7 @@ Use this template for every lab in this repository. Adapt the wording to suit th
 ## 1. Lab Summary
 
 **Lab:**
-**Topic area:** Mac Apple Administration / SQL and Databases / AI
+**Topic area:** Mac Apple Administration / Computer Science Foundations / Data Engineering / AWS / GCP / AI
 **Difficulty:** Beginner / Intermediate / Advanced
 **Status:** Not started / In progress / Completed / Blocked
 
@@ -17,7 +17,7 @@ Use this template for every lab in this repository. Adapt the wording to suit th
 
 State the purpose of the lab in 2 to 4 lines.
 
-The objective should include the technical aim and the professional leverage aim.
+The objective should include the technical aim, the SRE relevance, and the professional leverage aim.
 
 ---
 
@@ -28,9 +28,10 @@ Briefly describe the real-world situation this lab simulates.
 The scenario should include:
 
 * the technical situation
-* the person or team affected
+* the person, service, or team affected
 * the expected professional behaviour
 * the communication challenge
+* the operational or reliability concern
 
 ---
 
@@ -42,6 +43,7 @@ List the reference material used to complete the lab.
 | ---- | ------------------- |
 | Technical topic | |
 | Vendor documentation | |
+| SRE or reliability concept | |
 | Career or communication layer | |
 
 ---
@@ -54,7 +56,7 @@ List the reference material used to complete the lab.
 | R2 | | Not started |
 | R3 | | Not started |
 
-Requirements should include technical requirements and at least one communication or career-evidence requirement.
+Requirements should include technical requirements, evidence requirements, and at least one communication or career-evidence requirement.
 
 ---
 
@@ -68,6 +70,7 @@ You must not:
 * copy copyrighted books into the repository
 * claim production experience that did not happen
 * exaggerate the lab outcome
+* build tools that depend on unsafe or unsanitised data
 
 Add topic-specific constraints below.
 
@@ -82,6 +85,7 @@ Examples:
 * The lab uses fictional data.
 * The lab is performed in a personal learning environment.
 * The output is intended for portfolio and interview evidence.
+* Any model, script, or application is a learning artefact, not a production system.
 
 ---
 
@@ -94,9 +98,12 @@ Use this section for:
 * folder structure
 * technical workflow
 * investigation workflow
-* SQL query workflow
+* reliability calculation workflow
+* SQL or data pipeline workflow
 * database design workflow
+* cloud operational workflow
 * AI evaluation workflow
+* application workflow
 * communication workflow
 
 ---
@@ -107,6 +114,7 @@ Use this section for:
 | -------------- | ------- |
 | Lab write-up | Evidence of completed work |
 | Verification evidence | Proof that the work was checked |
+| Model, script, dataset, dashboard, or application | Practical SRE-supporting artefact, where relevant |
 | Career leverage output | Interview, CV, LinkedIn, or recruiter-facing proof |
 
 ---
@@ -123,6 +131,8 @@ Use these tasks as a guide, not as a copy-paste tutorial.
 
 Include a task for communication, interview, or branding output.
 
+When relevant, include a task for building a small model, script, dashboard, or application.
+
 ---
 
 ## 10. Key Commands or Methods Used
@@ -131,7 +141,7 @@ Include a task for communication, interview, or branding output.
 | ----------------- | ------- |
 | | |
 
-For non-command labs, list the method, framework, checklist, query, prompt, or workflow used.
+For non-command labs, list the method, framework, checklist, query, prompt, model, calculation, or workflow used.
 
 ---
 
@@ -153,9 +163,15 @@ This section proves that the lab worked.
 
 For Mac labs, include device, profile, configuration, or support evidence.
 
-For SQL and database labs, include input data, query results, schema checks, row counts, data quality checks, or explain-plan evidence where useful.
+For computer science foundation labs, include calculations, examples, diagrams, or small scripts.
 
-For AI labs, include expected output versus actual output.
+For data engineering labs, include input data, query results, schema checks, row counts, data quality checks, or pipeline output.
+
+For AWS and GCP labs, include sanitised configuration, monitoring, access-control, cost, or reliability evidence.
+
+For AI labs, include expected output versus actual output, failure cases, and limitations.
+
+For application labs, include sample input, expected behaviour, actual behaviour, and limitations.
 
 ---
 
@@ -214,6 +230,8 @@ Cover the relevant items:
 * evidence quality
 * data quality
 * backup and recovery
+* cost control
+* model or application limitations
 
 ---
 
@@ -227,7 +245,7 @@ State clearly whether the lab was completed and what was proven.
 
 Write 3 to 6 bullet points.
 
-Include technical learning and professional learning.
+Include technical learning, SRE learning, and professional learning.
 
 ---
 
@@ -276,6 +294,7 @@ Write 2 to 5 bullet points.
 * [ ] Decisions documented
 * [ ] Security considerations documented
 * [ ] Diagram added if useful
+* [ ] Model, script, dashboard, or application output added if relevant
 * [ ] Career leverage output completed
 * [ ] Reflection completed
 * [ ] No secrets or private data committed
@@ -287,12 +306,13 @@ Write 2 to 5 bullet points.
 Answer these after completing the lab.
 
 1. What technical skill did this lab develop?
-2. What evidence proves the lab worked?
-3. What assumptions did I make?
-4. What would a stronger engineer check next?
-5. How would I explain this to a non-technical user?
-6. How would I explain this to a manager?
-7. How would I explain this in an interview?
-8. What does this lab prove about my career direction?
-9. How could this become a LinkedIn or portfolio update?
-10. What would make this output look more professional?
+2. What SRE problem could this help with?
+3. What evidence proves the lab worked?
+4. What assumptions did I make?
+5. What would a stronger engineer check next?
+6. How would I explain this to a non-technical user?
+7. How would I explain this to a manager?
+8. How would I explain this in an interview?
+9. What does this lab prove about my career direction?
+10. How could this become a LinkedIn or portfolio update?
+11. What would make this output look more professional?
