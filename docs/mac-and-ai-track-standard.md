@@ -74,6 +74,22 @@ Each AI lab must document:
 * regression check showing previous functionality still works where relevant
 * updated architecture, data-flow, or component notes where relevant
 
+## AI Cross-Cutting Requirements
+
+The AI labs must also follow `docs/ai-cross-cutting-requirements.md`.
+
+These requirements do not increase the lab count. They are embedded inside the existing 48 AI labs.
+
+Every AI lab should include relevant evidence for:
+
+* software engineering discipline
+* MLOps / LLMOps
+* AI security
+* evaluation-first practice
+* workflow orchestration
+* data and model governance
+* minimal product or interface layer
+
 ## Computer Science Thread
 
 Computer Science Foundations stay in the track as a serious foundation, not as a deleted topic.
@@ -168,10 +184,24 @@ Every AI lab should include this table when relevant:
 | GCP | Equivalent service or implementation option | Mapping or lab evidence |
 | SRE / operations | Reliability, observability, or incident thinking | Verification, monitoring note, or limitation |
 
+## Required Cross-Cutting Checklist
+
+Every AI lab should include this checklist when relevant:
+
+| Cross-cutting area | Evidence in this lab |
+| --- | --- |
+| Software engineering discipline | Code, structure, tests, docs, or repeatable execution |
+| MLOps / LLMOps | Versioning, tracking, change log, rollback, or regression check |
+| AI security | Security risk, control, or mitigation |
+| Evaluation-first practice | Expected output, actual output, scoring, or review |
+| Workflow orchestration | Repeatable command, task runner, scheduled job, or pipeline note |
+| Governance | Data dictionary, lineage, model card, risk register, or approval note |
+| Product/interface layer | CLI, API, dashboard, report, or demo improvement |
+
 ## Completion Standard
 
 A Mac and AI lab is complete only when it preserves the right scope.
 
 For Mac labs, this means Mac support, Apple device management, troubleshooting, documentation, and job evidence.
 
-For AI labs, this means cumulative AI Engineering plus the relevant CS, data, R, local, multi-cloud, and operations layers.
+For AI labs, this means cumulative AI Engineering plus the relevant CS, data, R, local, multi-cloud, operations, software engineering, MLOps/LLMOps, security, evaluation, orchestration, governance, and product-interface layers.
