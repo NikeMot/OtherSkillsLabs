@@ -156,22 +156,59 @@ Planned lab themes:
 
 ## 06 — AI
 
+The AI track uses `AI Engineering` as the backbone. One `AI Engineering` chapter should produce two labs. The course has 30 labs total, assuming 15 backbone chapters.
+
+The track is augmented with `Hands-On Large Language Models`, `Prompt Engineering for LLMs`, `An Introduction to Statistical Learning with Python`, `AI Systems Performance Engineering`, `Observability Engineering`, `Redefining Data Engineering with AI`, and `AI Agents: The Definitive Guide`.
+
+The junior AI engineer job description shapes every lab through target job evidence.
+
 Planned lab themes:
 
-1. AI-assisted ticket triage
-2. Prompt engineering for support work
-3. Log summarisation workflow
-4. Runbook generation workflow
-5. Retrieval workflow over lab notes
-6. AI output evaluation
-7. Hallucination and limitation checks
-8. AI privacy and data handling
-9. Human approval workflow
-10. AI-assisted interview preparation
-11. AI-assisted personal brand workflow
-12. AI operations reflection
-13. Build a small AI-assisted SRE helper application
-14. Evaluate whether an AI workflow is safe enough for operational use
+1. AI engineering foundations part 1
+2. AI engineering foundations part 2
+3. Python data preparation for AI part 1
+4. Python data preparation for AI part 2
+5. First ML model part 1
+6. First ML model part 2
+7. Model evaluation part 1
+8. Model evaluation part 2
+9. LLM foundations part 1
+10. LLM foundations part 2
+11. Prompt engineering part 1
+12. Prompt engineering part 2
+13. Embeddings and semantic search part 1
+14. Embeddings and semantic search part 2
+15. RAG workflow part 1
+16. RAG workflow part 2
+17. AI agents part 1
+18. AI agents part 2
+19. AI application integration part 1
+20. AI application integration part 2
+21. AI systems performance part 1
+22. AI systems performance part 2
+23. AI observability part 1
+24. AI observability part 2
+25. AI safety and governance part 1
+26. AI safety and governance part 2
+27. AI for data and operations part 1
+28. AI for data and operations part 2
+29. Junior AI engineer capstone part 1
+30. Junior AI engineer capstone part 2
+
+Every AI lab must include:
+
+* target job evidence
+* AI Engineering chapter reference
+* supporting reference notes
+* coverage ledger update
+* manual baseline where relevant
+* AI-assisted follow-up where relevant
+* test inputs and expected outputs
+* actual outputs and evaluation result
+* failure modes and limitations
+* safety and data handling note
+* stakeholder-facing summary
+* recruiter-facing summary
 
 ---
 
@@ -187,7 +224,7 @@ Examples:
 03-data-engineering/lab-01-data-engineering-described/
 04-aws/lab-01-aws-account-and-iam-basics/
 05-gcp/lab-01-gcp-project-and-iam-basics/
-06-ai/lab-01-ai-assisted-ticket-triage/
+06-ai/lab-01-ai-engineering-foundations-part-1/
 ```
 
 ## Completion Standard
