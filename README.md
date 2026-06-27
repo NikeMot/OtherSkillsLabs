@@ -25,6 +25,8 @@ Every lab also develops the non-technical leverage skills needed to progress fro
 
 The aim is not just to learn tools. The aim is to create proof that technical work can be investigated, explained, documented, discussed, and converted into career evidence.
 
+The lab series is aligned to target junior roles in backend development, data engineering, cloud engineering, AI engineering, SRE, platform, and operations-adjacent work. See `docs/target-role-alignment.md` for the role-to-lab mapping.
+
 ---
 
 ## Goals
