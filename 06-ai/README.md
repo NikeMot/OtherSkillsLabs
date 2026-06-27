@@ -2,7 +2,9 @@
 
 ## Purpose
 
-This folder contains labs for AI engineering, machine learning foundations, LLMs, prompt engineering, retrieval workflows, AI agents, evaluation, observability, and small AI-enabled operations applications.
+This folder contains the main AI Engineering pillar inside the `Mac and AI` track.
+
+The labs cover AI engineering, machine learning foundations, R and Python data preparation, LLMs, prompt engineering, retrieval workflows, AI agents, evaluation, observability, and small AI-enabled operations applications.
 
 The goal is to build junior AI engineer evidence without exaggerating what AI can do. The focus is useful, safe, explainable AI work for support, data, backend, platform, and SRE contexts.
 
@@ -13,14 +15,15 @@ The junior AI engineer job description shapes every lab.
 Every lab must include target job evidence for at least one of:
 
 * Python for AI and ML workflows
-* NumPy, Pandas, and data preparation
+* R for data analysis, statistics, visualisation, and statistical learning where useful
+* NumPy, Pandas, tidyverse, and data preparation
 * data cleaning and feature engineering
 * model building and model evaluation
-* scikit-learn, TensorFlow, or PyTorch awareness
+* scikit-learn, TensorFlow, PyTorch, or R statistical learning awareness
 * NLP, retrieval, recommendation, or computer-vision awareness where relevant
 * deployment and integration into real applications
 * Git and modern development practice
-* cloud or platform awareness
+* AWS, Azure, and GCP platform awareness
 * communication with engineers, data scientists, product teams, and stakeholders
 * safe, responsible, and well-evaluated AI behaviour
 
@@ -47,6 +50,9 @@ Supporting sources:
 * `Hands-On Large Language Models`
 * `Prompt Engineering for LLMs`
 * `An Introduction to Statistical Learning with Python`
+* `An Introduction to Statistical Learning with R`
+* `R for Data Science`
+* `Practical Statistics for Data Scientists`
 * `AI Systems Performance Engineering`
 * `Observability Engineering`
 * `Redefining Data Engineering with AI`
@@ -57,6 +63,20 @@ Supporting sources:
 The aim is to cover all relevant content from the chosen books across the full track.
 
 Each lab must update a coverage ledger showing which chapter or major section was used, which lab covered it, and whether it is planned, completed, or needs review.
+
+## Embedded Learning Layers
+
+AI labs should preserve the wider learning outcomes from the original track.
+
+Where relevant, each AI lab should include:
+
+* CS foundation note
+* data engineering note
+* R note
+* AWS mapping or implementation option
+* Azure mapping or implementation option
+* GCP mapping or implementation option
+* SRE or operations evidence
 
 ## Manual-First Rule
 
@@ -70,10 +90,11 @@ AI assistance must not replace understanding, verification, or manual reasoning.
 
 Labs in this folder may cover:
 
-* Python, NumPy, and Pandas for AI data preparation
+* Python, NumPy, Pandas, R, and tidyverse for AI data preparation
 * data cleaning and feature engineering
 * supervised ML models
 * model evaluation and error analysis
+* R and Python model comparison
 * LLM foundations
 * prompt engineering for technical work
 * structured outputs
@@ -85,6 +106,7 @@ Labs in this folder may cover:
 * hallucination checks
 * AI observability and monitoring
 * AI systems performance and cost thinking
+* AWS, Azure, and GCP service mapping
 * human approval points
 * safe deployment thinking
 * small AI-enabled backend or SRE helper applications
@@ -106,8 +128,8 @@ Every AI lab must also include:
 ```text
 lab-01-ai-engineering-foundations-part-1/
 lab-02-ai-engineering-foundations-part-2/
-lab-03-python-data-preparation-for-ai-part-1/
-lab-04-python-data-preparation-for-ai-part-2/
+lab-03-python-and-r-data-preparation-for-ai-part-1/
+lab-04-python-and-r-data-preparation-for-ai-part-2/
 lab-05-first-ml-model-part-1/
 lab-06-first-ml-model-part-2/
 lab-07-model-evaluation-part-1/
