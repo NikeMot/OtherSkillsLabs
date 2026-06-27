@@ -47,6 +47,24 @@ Mac labs remain separate and do not need to build into the AI project.
 
 ---
 
+## AI Cross-Cutting Requirements
+
+The AI section must also follow `docs/ai-cross-cutting-requirements.md`.
+
+These requirements are embedded into the existing 48 AI labs and do not increase the lab count.
+
+Every AI lab should include relevant evidence for:
+
+* software engineering discipline
+* MLOps / LLMOps
+* AI security
+* evaluation-first practice
+* workflow orchestration
+* data and model governance
+* minimal product or interface layer
+
+---
+
 ## 01 — Mac / Apple Administration
 
 The Mac track uses `Apple Device Management` as the primary skeleton. Each lab covers two chapters from that book, supplemented by `macOS Support Essentials`, `Modern Operating Systems`, `The Practice of System and Network Administration`, and the Mac-focused MSP job requirements.
@@ -220,6 +238,7 @@ Every AI lab must include:
 * R note where relevant
 * local implementation evidence where relevant
 * Azure / AWS / GCP mapping or implementation evidence where relevant
+* cross-cutting requirements checklist where relevant
 * manual baseline where relevant
 * AI-assisted follow-up where relevant
 * test inputs and expected outputs
