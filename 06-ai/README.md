@@ -25,6 +25,22 @@ Each AI lab must document:
 
 The cumulative project can be framed as an `AI Operations and Data Assistant` built with safe fictional or generated data.
 
+## Cross-Cutting Requirements
+
+The 48-lab AI course must also include the mandatory cross-cutting requirements in `docs/ai-cross-cutting-requirements.md`.
+
+These requirements do not add more labs. They are embedded inside the existing 48 labs.
+
+Every AI lab should include relevant evidence for:
+
+* software engineering discipline
+* MLOps / LLMOps
+* AI security
+* evaluation-first practice
+* workflow orchestration
+* data and model governance
+* minimal product or interface layer
+
 ## Target Job Rule
 
 The junior AI engineer job description shapes every lab.
