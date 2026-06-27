@@ -1,19 +1,39 @@
 # Topic Map
 
-## Technical Topics
+## Track Name
 
-This repository has six technical topic areas:
+The visible track name is now `Mac and AI`.
+
+The repository still keeps the numbered folders for organisation, but the learning design is no longer six separate headline tracks.
+
+The track has two primary pillars:
 
 ```text
-01-mac-apple-administration/
-02-computer-science-foundations/
-03-data-engineering/
-04-aws/
-05-gcp/
-06-ai/
+01-mac-apple-administration/  -> primary Mac pillar
+06-ai/                        -> primary AI pillar
+```
+
+The remaining topic folders are embedded support threads:
+
+```text
+02-computer-science-foundations/ -> CS foundation thread for AI
+03-data-engineering/             -> data engineering and R thread for AI
+04-aws/                          -> AWS cross-cloud thread
+05-gcp/                          -> GCP cross-cloud thread
+Azure                            -> cross-cloud thread documented inside labs and docs
 ```
 
 Every lab also includes thinking, social skill, branding, interview technique, and personal development outputs.
+
+---
+
+## Preservation Rule
+
+Changing the track name to `Mac and AI` must not reduce the learning scope.
+
+The learner should still cover the intended outcomes from Mac administration, computer science, data engineering, R, AWS, Azure, GCP, AI engineering, and SRE or operations-style evidence.
+
+The difference is organisation: CS, data engineering, R, and cloud now support the AI pillar instead of sitting as competing headline tracks.
 
 ---
 
@@ -46,9 +66,13 @@ Every Mac lab must include:
 
 ---
 
-## 02 — Computer Science Foundations
+## 02 — Computer Science Foundations Thread
 
-Planned lab themes:
+Computer Science Foundations remain part of the track.
+
+They are kept through the AI pillar in the same way a real CS and AI course would include algorithms, systems, data structures, maths, operating systems, and performance reasoning.
+
+Planned CS outcomes to preserve:
 
 1. SRE maths and reliability basics
 2. Percentiles, averages, distributions, and outliers
@@ -58,24 +82,41 @@ Planned lab themes:
 6. Big O and operational performance intuition
 7. Data structures for logs, events, and alerts
 8. Algorithms for searching, grouping, and deduplication
-9. Operating system concepts for SRE
+9. Operating system concepts for SRE and AI services
 10. Networking and distributed systems basics
-11. Probability and risk for incidents
+11. Probability and risk for incidents and model behaviour
 12. Explaining technical trade-offs clearly
+
+CS should appear inside AI labs through:
+
+* vectors, similarity, indexing, and search
+* data structures and complexity
+* HTTP, APIs, sockets, files, and processes
+* memory, latency, throughput, and scaling
+* state machines, queues, control flow, and failure states
+* probability, evaluation, risk, and reliability thinking
 
 ---
 
-## 03 — Data Engineering
+## 03 — Data Engineering and R Thread
+
+Data Engineering remains part of the track as the data foundation for AI.
 
 The Data Engineering track uses `Fundamentals of Data Engineering` as the foundation. The first 11 labs map to one chapter each. Labs 12-23 are drill and deepening labs. Lab 24 is the capstone.
 
-The track is augmented with `Designing Data-Intensive Applications`, `Database Internals`, `Data Engineering Design Patterns`, and `Redefining Data Engineering with AI`.
+The track is augmented with `Designing Data-Intensive Applications`, `Database Internals`, `Data Engineering Design Patterns`, `Redefining Data Engineering with AI`, and R resources.
 
-Manual-first rule: complete the data engineering task manually first, then use the AI-focused source to learn how AI can assist after the manual method is understood.
+Drive resources found in the R folder:
 
-The junior data engineering job description shapes every lab through target job evidence.
+* `R for Data Science`
+* `Practical Statistics for Data Scientists`
+* `An Introduction to Statistical Learning with R`
 
-Planned lab themes:
+R should be used for data analysis, visualisation, statistics, model comparison, and reporting where it strengthens the AI or data engineering work.
+
+Manual-first rule: complete the data engineering or statistical task manually first, then use AI assistance after the method is understood.
+
+Planned data and R outcomes to preserve:
 
 1. Data engineering described — Fundamentals of Data Engineering chapter 1
 2. Data engineering lifecycle — Fundamentals of Data Engineering chapter 2
@@ -102,63 +143,36 @@ Planned lab themes:
 23. AI augmentation after manual data engineering
 24. Junior data engineering capstone
 
-Every Data Engineering lab must include:
+---
 
-* target job evidence
-* whole-chapter reference notes
-* coverage ledger update
-* manual workflow
-* augmentation reference notes
-* AI-assisted follow-up only after the manual workflow
-* data quality or verification evidence
-* stakeholder-facing summary
-* recruiter-facing summary
+## 04 — Multi-Cloud Thread: AWS, Azure, and GCP
+
+AWS, Azure, and GCP are not active standalone headline tracks for now.
+
+They become a cross-cloud implementation layer used throughout the AI track.
+
+For every cloud-relevant concept, the lab should include an AWS / Azure / GCP mapping.
+
+| Capability | AWS | Azure | GCP |
+| --- | --- | --- | --- |
+| Object storage | S3 | Blob Storage | Cloud Storage |
+| Compute or app hosting | EC2, Lambda, ECS | App Service, Functions, Container Apps | Compute Engine, Cloud Run, Cloud Functions |
+| Managed relational database | RDS | Azure SQL Database | Cloud SQL |
+| Analytics | Redshift, Athena | Synapse, Fabric concepts | BigQuery |
+| Secrets | Secrets Manager, Parameter Store | Key Vault | Secret Manager |
+| Monitoring | CloudWatch | Azure Monitor, Log Analytics | Cloud Monitoring |
+| Identity and access | IAM | Entra ID, Azure RBAC | IAM |
+| AI platform | Bedrock, SageMaker | Azure AI Foundry, Azure Machine Learning | Vertex AI |
+
+The learner may practise hands-on with one cloud at a time, but the documentation should show how the same concept maps across all three.
 
 ---
 
-## 04 — AWS
-
-Planned lab themes:
-
-1. AWS account and IAM basics
-2. VPC, subnets, route tables, and security groups
-3. EC2 operational support workflow
-4. S3 storage, lifecycle, and access controls
-5. RDS basics and operational considerations
-6. CloudWatch metrics, logs, and alarms
-7. Route 53 and DNS support scenarios
-8. Load balancing and health checks
-9. Backup, recovery, and resilience basics
-10. Cost monitoring and tagging
-11. AWS incident evidence pack
-12. AWS SRE mini-project
-
----
-
-## 05 — Google Cloud Platform
-
-Planned lab themes:
-
-1. GCP project and IAM basics
-2. VPC, subnet, firewall, and routing basics
-3. Compute Engine operational support workflow
-4. Cloud Storage access and lifecycle basics
-5. Cloud SQL basics and operational considerations
-6. Cloud Monitoring metrics, logs, and alerts
-7. Cloud DNS support scenarios
-8. Load balancing and health checks
-9. Backup, recovery, and resilience basics
-10. Cost monitoring and labels
-11. GCP incident evidence pack
-12. GCP SRE mini-project
-
----
-
-## 06 — AI
+## 06 — AI Engineering Pillar
 
 The AI track uses `AI Engineering` as the backbone. One `AI Engineering` chapter should produce two labs. The course has 30 labs total, assuming 15 backbone chapters.
 
-The track is augmented with `Hands-On Large Language Models`, `Prompt Engineering for LLMs`, `An Introduction to Statistical Learning with Python`, `AI Systems Performance Engineering`, `Observability Engineering`, `Redefining Data Engineering with AI`, and `AI Agents: The Definitive Guide`.
+The track is augmented with `Hands-On Large Language Models`, `Prompt Engineering for LLMs`, `An Introduction to Statistical Learning with Python`, `An Introduction to Statistical Learning with R`, `Practical Statistics for Data Scientists`, `R for Data Science`, `AI Systems Performance Engineering`, `Observability Engineering`, `Redefining Data Engineering with AI`, and `AI Agents: The Definitive Guide`.
 
 The junior AI engineer job description shapes every lab through target job evidence.
 
@@ -166,8 +180,8 @@ Planned lab themes:
 
 1. AI engineering foundations part 1
 2. AI engineering foundations part 2
-3. Python data preparation for AI part 1
-4. Python data preparation for AI part 2
+3. Python and R data preparation for AI part 1
+4. Python and R data preparation for AI part 2
 5. First ML model part 1
 6. First ML model part 2
 7. Model evaluation part 1
@@ -201,6 +215,10 @@ Every AI lab must include:
 * AI Engineering chapter reference
 * supporting reference notes
 * coverage ledger update
+* CS foundation note where relevant
+* data engineering note where relevant
+* R note where relevant
+* AWS / Azure / GCP mapping where relevant
 * manual baseline where relevant
 * AI-assisted follow-up where relevant
 * test inputs and expected outputs
@@ -220,10 +238,6 @@ Examples:
 
 ```text
 01-mac-apple-administration/lab-01-apple-device-management-foundations/
-02-computer-science-foundations/lab-01-sre-maths-and-reliability-basics/
-03-data-engineering/lab-01-data-engineering-described/
-04-aws/lab-01-aws-account-and-iam-basics/
-05-gcp/lab-01-gcp-project-and-iam-basics/
 06-ai/lab-01-ai-engineering-foundations-part-1/
 ```
 
