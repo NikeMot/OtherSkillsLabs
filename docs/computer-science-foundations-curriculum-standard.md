@@ -6,6 +6,25 @@ This document defines how the Computer Science Foundations labs should use refer
 
 The track supports junior backend, SRE, platform, and operations-adjacent roles. The focus is practical: Python, FastAPI, REST APIs, PostgreSQL, Docker, GitHub workflow, CI/CD basics, reliability, scalability, and performance.
 
+## Target Job Rule
+
+The backend job description must shape every lab.
+
+Each lab must include a `Target job evidence` section showing how the lab maps to at least one target job requirement.
+
+The target job requirements are:
+
+* Python backend feature work
+* FastAPI endpoint implementation
+* REST API design
+* PostgreSQL integration
+* clean and documented code
+* Docker-based delivery awareness
+* GitHub collaboration and code-quality workflow
+* Supabase-style platform awareness
+* reliability, scalability, and performance thinking
+* clear communication with product, frontend, or technical stakeholders
+
 ## Whole-Chapter Rule
 
 Use whole chapters as references.
@@ -34,20 +53,20 @@ Primary sources:
 
 ## Planned Lab Sequence
 
-| Lab | Folder name | Primary outcome |
-| --- | --- | --- |
-| 01 | lab-01-python-backend-foundations | Clean Python module with tests |
-| 02 | lab-02-http-rest-and-fastapi-basics | Small FastAPI service |
-| 03 | lab-03-postgresql-backed-api | API connected to PostgreSQL |
-| 04 | lab-04-service-data-modelling | Data model for users, tickets, services, and incidents |
-| 05 | lab-05-dockerised-backend-service | Dockerised local backend service |
-| 06 | lab-06-github-workflow-and-ci | GitHub workflow with automated checks |
-| 07 | lab-07-algorithms-for-operational-data | Searching, grouping, and deduplication for operational data |
-| 08 | lab-08-operating-system-concepts-for-backend-services | Processes, memory, files, sockets, and services |
-| 09 | lab-09-performance-latency-and-throughput | Latency, throughput, and bottleneck analysis |
-| 10 | lab-10-sli-slo-and-error-budget-calculator | Small reliability calculator |
-| 11 | lab-11-supabase-auth-storage-and-realtime-concepts | Supabase-style architecture notes |
-| 12 | lab-12-backend-sre-helper-app-capstone | Small backend or SRE helper application |
+| Lab | Folder name | Primary outcome | Target job evidence |
+| --- | --- | --- | --- |
+| 01 | lab-01-python-backend-foundations | Clean Python module with tests | Python, code quality, documentation |
+| 02 | lab-02-http-rest-and-fastapi-basics | Small FastAPI service | FastAPI endpoints and REST API basics |
+| 03 | lab-03-postgresql-backed-api | API connected to PostgreSQL | PostgreSQL-backed backend feature |
+| 04 | lab-04-service-data-modelling | Data model for users, tickets, services, and incidents | scalable service data modelling |
+| 05 | lab-05-dockerised-backend-service | Dockerised local backend service | Docker delivery awareness |
+| 06 | lab-06-github-workflow-and-ci | GitHub workflow with automated checks | GitHub workflow and code quality |
+| 07 | lab-07-algorithms-for-operational-data | Searching, grouping, and deduplication for operational data | performance-aware backend logic |
+| 08 | lab-08-operating-system-concepts-for-backend-services | Processes, memory, files, sockets, and services | reliability and systems behaviour |
+| 09 | lab-09-performance-latency-and-throughput | Latency, throughput, and bottleneck analysis | scalability and performance thinking |
+| 10 | lab-10-sli-slo-and-error-budget-calculator | Small reliability calculator | reliability and SRE reasoning |
+| 11 | lab-11-supabase-auth-storage-and-realtime-concepts | Supabase-style architecture notes | platform feature awareness |
+| 12 | lab-12-backend-sre-helper-app-capstone | Small backend or SRE helper application | integrated backend and reliability evidence |
 
 ## Planned Chapter Map
 
@@ -82,6 +101,7 @@ Each completed lab should include:
 
 * lab summary
 * target role skill mapping
+* target job evidence section
 * whole-chapter reference table
 * implementation notes
 * files created or changed
