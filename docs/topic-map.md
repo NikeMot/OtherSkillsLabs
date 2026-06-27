@@ -2,11 +2,9 @@
 
 ## Track Name
 
-The visible track name is now `Mac and AI`.
+The visible track name is `Mac and AI`.
 
-The repository still keeps the numbered folders for organisation, but the learning design is no longer six separate headline tracks.
-
-The track has two primary pillars:
+The repository keeps the numbered folders for organisation, but the learning design has two primary pillars:
 
 ```text
 01-mac-apple-administration/  -> primary Mac pillar
@@ -34,6 +32,18 @@ Changing the track name to `Mac and AI` must not reduce the learning scope.
 The learner should still cover the intended outcomes from Mac administration, computer science, data engineering, R, AWS, Azure, GCP, AI engineering, and SRE or operations-style evidence.
 
 The difference is organisation: CS, data engineering, R, and cloud now support the AI pillar instead of sitting as competing headline tracks.
+
+---
+
+## AI Cumulative Build Rule
+
+This rule applies only to the AI section.
+
+Every AI lab must build on previous AI labs.
+
+The AI section should become one growing `AI Operations and Data Assistant` or equivalent cumulative project. Each AI lab should add a new capability, reuse existing artefacts, and include a regression check where relevant.
+
+Mac labs remain separate and do not need to build into the AI project.
 
 ---
 
@@ -68,9 +78,9 @@ Every Mac lab must include:
 
 ## 02 — Computer Science Foundations Thread
 
-Computer Science Foundations remain part of the track.
+Computer Science Foundations remain part of the AI pillar.
 
-They are kept through the AI pillar in the same way a real CS and AI course would include algorithms, systems, data structures, maths, operating systems, and performance reasoning.
+They are kept through the AI labs in the same way a real CS and AI course would include algorithms, systems, data structures, maths, operating systems, and performance reasoning.
 
 Planned CS outcomes to preserve:
 
@@ -87,24 +97,13 @@ Planned CS outcomes to preserve:
 11. Probability and risk for incidents and model behaviour
 12. Explaining technical trade-offs clearly
 
-CS should appear inside AI labs through:
-
-* vectors, similarity, indexing, and search
-* data structures and complexity
-* HTTP, APIs, sockets, files, and processes
-* memory, latency, throughput, and scaling
-* state machines, queues, control flow, and failure states
-* probability, evaluation, risk, and reliability thinking
-
 ---
 
 ## 03 — Data Engineering and R Thread
 
 Data Engineering remains part of the track as the data foundation for AI.
 
-The Data Engineering track uses `Fundamentals of Data Engineering` as the foundation. The first 11 labs map to one chapter each. Labs 12-23 are drill and deepening labs. Lab 24 is the capstone.
-
-The track is augmented with `Designing Data-Intensive Applications`, `Database Internals`, `Data Engineering Design Patterns`, `Redefining Data Engineering with AI`, and R resources.
+Data engineering should come before serious AI work because useful AI systems depend on datasets, pipelines, quality checks, storage, metadata, evaluation records, and serving layers.
 
 Drive resources found in the R folder:
 
@@ -116,109 +115,111 @@ R should be used for data analysis, visualisation, statistics, model comparison,
 
 Manual-first rule: complete the data engineering or statistical task manually first, then use AI assistance after the method is understood.
 
-Planned data and R outcomes to preserve:
-
-1. Data engineering described — Fundamentals of Data Engineering chapter 1
-2. Data engineering lifecycle — Fundamentals of Data Engineering chapter 2
-3. Good data architecture — Fundamentals of Data Engineering chapter 3
-4. Technology selection for data pipelines — Fundamentals of Data Engineering chapter 4
-5. Source systems and operational data — Fundamentals of Data Engineering chapter 5
-6. Data storage layouts — Fundamentals of Data Engineering chapter 6
-7. Data ingestion pipeline — Fundamentals of Data Engineering chapter 7
-8. Query, modelling, and transformation — Fundamentals of Data Engineering chapter 8
-9. Serving data for analytics and AI — Fundamentals of Data Engineering chapter 9
-10. Data governance, quality, and access — Fundamentals of Data Engineering chapter 10
-11. Future of data engineering and AI awareness — Fundamentals of Data Engineering chapter 11
-12. SQL and data modelling drill
-13. Ingestion drill
-14. Transformation and curation drill
-15. Data quality validation drill
-16. Pipeline testing and automation drill
-17. Storage and database internals drill
-18. Query performance and cost drill
-19. Batch, streaming, and CDC drill
-20. Monitoring and incident drill
-21. Governance, lineage, and documentation drill
-22. Data product and serving layer drill
-23. AI augmentation after manual data engineering
-24. Junior data engineering capstone
-
 ---
 
-## 04 — Multi-Cloud Thread: AWS, Azure, and GCP
+## 04 — Multi-Cloud Thread: Local, Azure, AWS, and GCP
 
-AWS, Azure, and GCP are not active standalone headline tracks for now.
+Every major concept should be learned locally first.
 
-They become a cross-cloud implementation layer used throughout the AI track.
+Cloud-relevant concepts should then be mapped across Azure, AWS, and GCP.
 
-For every cloud-relevant concept, the lab should include an AWS / Azure / GCP mapping.
+The expected learning pattern is:
 
-| Capability | AWS | Azure | GCP |
-| --- | --- | --- | --- |
-| Object storage | S3 | Blob Storage | Cloud Storage |
-| Compute or app hosting | EC2, Lambda, ECS | App Service, Functions, Container Apps | Compute Engine, Cloud Run, Cloud Functions |
-| Managed relational database | RDS | Azure SQL Database | Cloud SQL |
-| Analytics | Redshift, Athena | Synapse, Fabric concepts | BigQuery |
-| Secrets | Secrets Manager, Parameter Store | Key Vault | Secret Manager |
-| Monitoring | CloudWatch | Azure Monitor, Log Analytics | Cloud Monitoring |
-| Identity and access | IAM | Entra ID, Azure RBAC | IAM |
-| AI platform | Bedrock, SageMaker | Azure AI Foundry, Azure Machine Learning | Vertex AI |
+```text
+1. local implementation
+2. Azure mapping or implementation
+3. AWS mapping or implementation
+4. GCP mapping or implementation
+```
 
-The learner may practise hands-on with one cloud at a time, but the documentation should show how the same concept maps across all three.
+The learner may practise hands-on with one cloud at a time, but documentation should show how the same concept maps across all three.
+
+| Capability | Local | Azure | AWS | GCP |
+| --- | --- | --- | --- | --- |
+| Object storage | filesystem / MinIO | Blob Storage | S3 | Cloud Storage |
+| App hosting | local FastAPI / Docker | App Service, Functions, Container Apps | Lambda, ECS, EC2 | Cloud Run, Cloud Functions, Compute Engine |
+| Managed relational database | SQLite / PostgreSQL | Azure SQL Database | RDS | Cloud SQL |
+| Analytics | DuckDB / PostgreSQL | Synapse, Fabric concepts | Athena, Redshift | BigQuery |
+| Secrets | local env pattern, never committed | Key Vault | Secrets Manager, Parameter Store | Secret Manager |
+| Monitoring | local logs and metrics | Azure Monitor, Log Analytics | CloudWatch | Cloud Monitoring |
+| Identity and access | local users / app config | Entra ID, Azure RBAC | IAM | IAM |
+| AI platform | local model/API workflow | Azure AI Foundry, Azure ML | Bedrock, SageMaker | Vertex AI |
 
 ---
 
 ## 06 — AI Engineering Pillar
 
-The AI track uses `AI Engineering` as the backbone. One `AI Engineering` chapter should produce two labs. The course has 30 labs total, assuming 15 backbone chapters.
+The AI pillar is a cumulative 48-lab course.
 
-The track is augmented with `Hands-On Large Language Models`, `Prompt Engineering for LLMs`, `An Introduction to Statistical Learning with Python`, `An Introduction to Statistical Learning with R`, `Practical Statistics for Data Scientists`, `R for Data Science`, `AI Systems Performance Engineering`, `Observability Engineering`, `Redefining Data Engineering with AI`, and `AI Agents: The Definitive Guide`.
-
-The junior AI engineer job description shapes every lab through target job evidence.
+Related topics are grouped together for learning. The path starts with CS, then data engineering and R, then ML, then LLMs/RAG/agents, then production deployment across local, Azure, AWS, and GCP.
 
 Planned lab themes:
 
-1. AI engineering foundations part 1
-2. AI engineering foundations part 2
-3. Python and R data preparation for AI part 1
-4. Python and R data preparation for AI part 2
-5. First ML model part 1
-6. First ML model part 2
-7. Model evaluation part 1
-8. Model evaluation part 2
-9. LLM foundations part 1
-10. LLM foundations part 2
-11. Prompt engineering part 1
-12. Prompt engineering part 2
-13. Embeddings and semantic search part 1
-14. Embeddings and semantic search part 2
-15. RAG workflow part 1
-16. RAG workflow part 2
-17. AI agents part 1
-18. AI agents part 2
-19. AI application integration part 1
-20. AI application integration part 2
-21. AI systems performance part 1
-22. AI systems performance part 2
-23. AI observability part 1
-24. AI observability part 2
-25. AI safety and governance part 1
-26. AI safety and governance part 2
-27. AI for data and operations part 1
-28. AI for data and operations part 2
-29. Junior AI engineer capstone part 1
-30. Junior AI engineer capstone part 2
+1. Local development environment
+2. CS introduction for AI
+3. Algorithms for data and AI
+4. HTTP, REST, and FastAPI basics
+5. SQL and PostgreSQL foundations
+6. Cloud foundations across Azure, AWS, and GCP
+7. Data engineering lifecycle and source systems
+8. Local data ingestion from CSV, JSON, or API
+9. Storage design: files, tables, object storage
+10. SQL transformation and modelling
+11. R data wrangling and visualisation
+12. Python and R dataset comparison
+13. Data quality checks and validation
+14. Pipeline testing and repeatable execution
+15. Metadata, lineage, and documentation
+16. Monitoring and incident handling for pipelines
+17. Data product and serving layer design
+18. Data engineering review across local, Azure, AWS, and GCP
+19. EDA in Python and R
+20. Practical statistics for AI datasets
+21. First supervised ML model
+22. Feature engineering
+23. Train/test validation and metrics
+24. Classification and regression comparison
+25. Error analysis and model limitations
+26. Model evaluation report in Python and R
+27. Local model serving with FastAPI
+28. ML workflow mapping across Azure ML, SageMaker, and Vertex AI
+29. LLM foundations and safe usage
+30. Prompt engineering and structured outputs
+31. Prompt evaluation and failure cases
+32. Embeddings and semantic search
+33. Retrieval index design
+34. RAG over runbooks, tickets, or lab notes
+35. RAG evaluation, citations, and hallucination checks
+36. AI agents: planning, tools, memory, and state
+37. Agent workflow simulation with human approval
+38. Agent safety, failure modes, and escalation
+39. Local AI application end to end
+40. Deploy AI app on Azure
+41. Deploy AI app on AWS
+42. Deploy AI app on GCP
+43. Secrets, identity, and access control cross-cloud
+44. Monitoring and observability cross-cloud
+45. Performance, latency, throughput, and cost cross-cloud
+46. AI governance, data handling, and incident response
+47. Capstone design: architecture, data, cloud, risk, evaluation
+48. Capstone build: demo, monitoring, and interview story
 
 Every AI lab must include:
 
 * target job evidence
-* AI Engineering chapter reference
+* cumulative build dependency
+* new capability added
+* previous artefacts reused
+* integration point with the growing project
+* regression check where relevant
+* source chapter or section used
 * supporting reference notes
 * coverage ledger update
 * CS foundation note where relevant
 * data engineering note where relevant
 * R note where relevant
-* AWS / Azure / GCP mapping where relevant
+* local implementation evidence where relevant
+* Azure / AWS / GCP mapping or implementation evidence where relevant
 * manual baseline where relevant
 * AI-assisted follow-up where relevant
 * test inputs and expected outputs
@@ -238,7 +239,7 @@ Examples:
 
 ```text
 01-mac-apple-administration/lab-01-apple-device-management-foundations/
-06-ai/lab-01-ai-engineering-foundations-part-1/
+06-ai/lab-01-local-development-environment/
 ```
 
 ## Completion Standard
