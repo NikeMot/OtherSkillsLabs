@@ -2,9 +2,50 @@
 
 ## Purpose
 
-This document defines how the AI labs should be designed and documented.
+This document defines how the AI labs should be designed and documented inside the `Mac and AI` track.
 
-The track targets junior AI engineer, AI-enabled backend, and AI-enabled SRE or operations roles. The evidence should show Python, R, data preparation, model evaluation, LLM application design, retrieval workflows, prompt engineering, agent awareness, deployment thinking, monitoring, responsible use, and clear communication.
+The AI section is a cumulative 48-lab course. It combines computer science foundations, data engineering, R, AI engineering, LLM systems, agents, observability, and cross-cloud implementation.
+
+Mac is separate. The cumulative-build rule in this document applies only to the AI section.
+
+## Cumulative AI Build Rule
+
+Every AI lab must build on previous AI labs.
+
+The AI section should not be a set of disconnected exercises. It should become one growing system that starts locally and gradually becomes a more complete AI/data/operations platform.
+
+Each AI lab must include:
+
+* previous lab dependencies used
+* new capability added
+* existing files, datasets, scripts, models, APIs, or documentation reused
+* integration point with the growing project
+* regression check showing previous functionality still works where relevant
+* updated architecture, data-flow, or component notes where relevant
+
+The running cumulative project can be framed as an `AI Operations and Data Assistant` built with safe fictional or generated data.
+
+Across the 48 labs, this project should gradually gain:
+
+* local development environment
+* Python and R data analysis workflow
+* SQL database
+* data ingestion pipeline
+* data transformation and quality checks
+* dataset documentation and lineage
+* ML baseline models
+* model evaluation reports
+* LLM prompt workflows
+* embeddings and semantic search
+* RAG over lab notes, tickets, or runbooks
+* agent workflow simulation
+* API or small application interface
+* observability and evaluation logs
+* local deployment
+* Azure deployment or mapping
+* AWS deployment or mapping
+* GCP deployment or mapping
+* final capstone documentation and demo evidence
 
 ## Target Job Rule
 
@@ -29,17 +70,24 @@ The target job requirements are:
 
 ## Core Rule
 
-`AI Engineering` is the backbone for this track.
+`AI Engineering` is a major backbone for this track, but the labs are organised for learning rather than grouped by book alone.
 
-Use one `AI Engineering` chapter across two labs.
+Related topics should be learned together.
 
-The course has 30 labs total. This assumes 15 backbone chapters from `AI Engineering`.
+The learning order is:
 
-If the available edition has a different chapter count, preserve the rule: one backbone chapter should produce two labs, and the remaining labs should be used for capstone, review, or missing coverage.
+1. CS and engineering foundations
+2. Data engineering and R foundations
+3. statistical learning and ML foundations
+4. LLMs, RAG, and agents
+5. production AI across local, Azure, AWS, and GCP
+6. capstone
+
+`AI Engineering` chapters should still be mapped across the course through the coverage ledger. Supporting books should be mapped to the labs where they naturally fit.
 
 ## Source Stack
 
-Primary backbone:
+Primary AI source:
 
 1. `AI Engineering`
 
@@ -51,10 +99,14 @@ Supporting sources:
 5. `An Introduction to Statistical Learning with R` — statistical learning and model practice in R
 6. `R for Data Science` — tidy data, transformation, visualisation, modelling workflow, and reporting
 7. `Practical Statistics for Data Scientists` — statistics, distributions, sampling, experiments, and practical statistical reasoning
-8. `AI Systems Performance Engineering` — performance, inference cost, scaling, deployment constraints, and operational behaviour
-9. `Observability Engineering` — AI observability, evaluation, monitoring, production signals, and operational visibility
-10. `Redefining Data Engineering with AI` — AI-assisted data workflows, human-in-the-loop oversight, governance, and data product thinking
-11. `AI Agents: The Definitive Guide` — agent design, tools, planning, memory, orchestration, safety, and evaluation; verify file availability before lab documentation
+8. `Fundamentals of Data Engineering` — source systems, ingestion, storage, transformation, data quality, governance, serving, and lifecycle thinking
+9. `Designing Data-Intensive Applications` — reliability, scalability, maintainability, storage, replication, and distributed-system trade-offs
+10. `Database Internals` — storage engines, indexes, transactions, query behaviour, and distributed data-system internals
+11. `Data Engineering Design Patterns` — pipeline, ingestion, validation, quality, and operational data patterns
+12. `AI Systems Performance Engineering` — performance, inference cost, scaling, deployment constraints, and operational behaviour
+13. `Observability Engineering` — AI observability, evaluation, monitoring, production signals, and operational visibility
+14. `Redefining Data Engineering with AI` — AI-assisted data workflows, human-in-the-loop oversight, governance, and data product thinking
+15. `AI Agents: The Definitive Guide` — agent design, tools, planning, memory, orchestration, safety, and evaluation; verify file availability before lab documentation
 
 ## Whole-Chapter and Coverage Rule
 
@@ -62,12 +114,12 @@ Use whole chapters as references.
 
 Every lab must record:
 
-* the `AI Engineering` chapter used
+* the primary chapter or source section used
 * the supporting chapter or major section from each additional source, where relevant
 * why each source was used
 * how the source shaped the task
 
-The aim is to cover all relevant content from the chosen books across the full 30-lab course.
+The aim is to cover all relevant content from the chosen books across the full 48-lab course.
 
 Maintain a coverage ledger so every chapter or major section from the chosen books is assigned to at least one lab.
 
@@ -90,78 +142,118 @@ Where relevant, each AI lab should include:
 | CS foundation | data structures, algorithms, OS concepts, complexity, networking, probability, or reliability maths |
 | Data engineering | ingestion, transformation, quality, metadata, lineage, serving layer, or data product thinking |
 | R | R data wrangling, visualisation, statistics, modelling, or model comparison |
-| AWS | matching AWS service or implementation option |
+| Local | local script, notebook, database, container, API, or application evidence |
 | Azure | matching Azure service or implementation option |
+| AWS | matching AWS service or implementation option |
 | GCP | matching GCP service or implementation option |
 | SRE / operations | reliability, monitoring, incident review, limitations, or production improvement |
 
-## Planned 30-Lab Sequence
+## Local and Multi-Cloud Rule
 
-| Lab | Folder name | Backbone | Main evidence |
-| --- | --- | --- | --- |
-| 01 | `lab-01-ai-engineering-foundations-part-1/` | AI Engineering chapter 1 | AI engineering role map, use-case selection, risks, and target job evidence |
-| 02 | `lab-02-ai-engineering-foundations-part-2/` | AI Engineering chapter 1 | Small AI workflow design with evaluation criteria |
-| 03 | `lab-03-python-and-r-data-preparation-for-ai-part-1/` | AI Engineering chapter 2 | Python, R, NumPy, Pandas, tidyverse, and data preparation evidence |
-| 04 | `lab-04-python-and-r-data-preparation-for-ai-part-2/` | AI Engineering chapter 2 | Cleaned dataset, features, assumptions, visualisation, and validation notes |
-| 05 | `lab-05-first-ml-model-part-1/` | AI Engineering chapter 3 | Baseline supervised model and manual evaluation |
-| 06 | `lab-06-first-ml-model-part-2/` | AI Engineering chapter 3 | Error analysis, feature iteration, R/Python comparison where useful, and model limitations |
-| 07 | `lab-07-model-evaluation-part-1/` | AI Engineering chapter 4 | Train/test split, metrics, baseline comparison, and evaluation notes |
-| 08 | `lab-08-model-evaluation-part-2/` | AI Engineering chapter 4 | Overfitting, validation, scoring, decision threshold notes, and statistical interpretation |
-| 09 | `lab-09-llm-foundations-part-1/` | AI Engineering chapter 5 | LLM concept notes and safe usage boundaries |
-| 10 | `lab-10-llm-foundations-part-2/` | AI Engineering chapter 5 | LLM-based support workflow with expected and actual outputs |
-| 11 | `lab-11-prompt-engineering-part-1/` | AI Engineering chapter 6 | Prompt design, task framing, and structured input/output examples |
-| 12 | `lab-12-prompt-engineering-part-2/` | AI Engineering chapter 6 | Prompt evaluation, failure cases, and improvement loop |
-| 13 | `lab-13-embeddings-and-semantic-search-part-1/` | AI Engineering chapter 7 | Embedding concept lab and semantic search over safe sample text |
-| 14 | `lab-14-embeddings-and-semantic-search-part-2/` | AI Engineering chapter 7 | Retrieval quality checks and search failure analysis |
-| 15 | `lab-15-rag-workflow-part-1/` | AI Engineering chapter 8 | RAG design over runbooks or lab notes |
-| 16 | `lab-16-rag-workflow-part-2/` | AI Engineering chapter 8 | RAG evaluation, citation checking, and hallucination controls |
-| 17 | `lab-17-ai-agents-part-1/` | AI Engineering chapter 9 | Agent concept, tool-use design, task boundaries, and control points |
-| 18 | `lab-18-ai-agents-part-2/` | AI Engineering chapter 9 | Agent workflow simulation, failure modes, and human approval points |
-| 19 | `lab-19-ai-application-integration-part-1/` | AI Engineering chapter 10 | FastAPI or script-based AI integration plan |
-| 20 | `lab-20-ai-application-integration-part-2/` | AI Engineering chapter 10 | Small AI-assisted application or service with documented interface |
-| 21 | `lab-21-ai-systems-performance-part-1/` | AI Engineering chapter 11 | Latency, cost, throughput, and scaling assumptions |
-| 22 | `lab-22-ai-systems-performance-part-2/` | AI Engineering chapter 11 | Performance test notes and optimisation trade-offs |
-| 23 | `lab-23-ai-observability-part-1/` | AI Engineering chapter 12 | Evaluation dataset, logging plan, and monitoring signals |
-| 24 | `lab-24-ai-observability-part-2/` | AI Engineering chapter 12 | AI output monitoring, failure review, and operational dashboard notes |
-| 25 | `lab-25-ai-safety-and-governance-part-1/` | AI Engineering chapter 13 | Risk register, data handling notes, and safe-use policy |
-| 26 | `lab-26-ai-safety-and-governance-part-2/` | AI Engineering chapter 13 | Human-in-the-loop workflow and escalation criteria |
-| 27 | `lab-27-ai-for-data-and-operations-part-1/` | AI Engineering chapter 14 | AI-assisted data or operations workflow after manual baseline |
-| 28 | `lab-28-ai-for-data-and-operations-part-2/` | AI Engineering chapter 14 | Evaluation of AI assistance, limitations, and productivity notes |
-| 29 | `lab-29-junior-ai-engineer-capstone-part-1/` | AI Engineering chapter 15 | Capstone design, dataset, evaluation plan, architecture, and cross-cloud map |
-| 30 | `lab-30-junior-ai-engineer-capstone-part-2/` | AI Engineering chapter 15 | Working AI application, tests, monitoring notes, limitations, and interview evidence |
+Every major concept should be learned locally first.
 
-## Supporting Source Placement
+Cloud-relevant concepts must then be mapped across Azure, AWS, and GCP.
 
-Use the supporting sources across the course as follows:
+The expected pattern is:
 
-| Supporting source | Main placement |
-| --- | --- |
-| `An Introduction to Statistical Learning with Python` | Labs 03-08 for ML foundations, features, baselines, validation, metrics, and error analysis |
-| `An Introduction to Statistical Learning with R` | Labs 05-08 for statistical learning comparison and R-based model understanding |
-| `R for Data Science` | Labs 03-04 and data-heavy labs for tidy data, visualisation, transformation, and reporting |
-| `Practical Statistics for Data Scientists` | Labs 07-08, 21-24, and evaluation-heavy labs for practical statistical reasoning |
-| `Hands-On Large Language Models` | Labs 09-16 for LLM concepts, embeddings, semantic search, and RAG |
-| `Prompt Engineering for LLMs` | Labs 11-12 and revisited in Labs 15-18 for prompts, structured outputs, and evaluation |
-| `AI Agents: The Definitive Guide` | Labs 17-18 and revisited in the capstone for agentic workflows, tool use, control, memory, and safety |
-| `AI Systems Performance Engineering` | Labs 21-22 and capstone performance notes |
-| `Observability Engineering` | Labs 23-24 and capstone monitoring notes |
-| `Redefining Data Engineering with AI` | Labs 27-28 for manual-first AI-assisted data and operations workflows |
+1. local implementation
+2. Azure mapping or implementation
+3. AWS mapping or implementation
+4. GCP mapping or implementation
 
-## Multi-Cloud Placement
-
-Every cloud-relevant AI lab should include an AWS / Azure / GCP mapping.
+Not every lab needs a full hands-on deployment to all three clouds. However, every cloud-relevant lab must include a short Azure / AWS / GCP comparison. Dedicated cloud labs must include stronger implementation evidence.
 
 Examples:
 
-| Lab area | AWS | Azure | GCP |
-| --- | --- | --- | --- |
-| Object storage | S3 | Blob Storage | Cloud Storage |
-| App hosting | Lambda, ECS, EC2 | App Service, Functions, Container Apps | Cloud Run, Cloud Functions, Compute Engine |
-| Managed database | RDS | Azure SQL Database | Cloud SQL |
-| Analytics | Athena, Redshift | Synapse, Fabric concepts | BigQuery |
-| Secrets | Secrets Manager, Parameter Store | Key Vault | Secret Manager |
-| Monitoring | CloudWatch | Azure Monitor, Log Analytics | Cloud Monitoring |
-| AI platform | Bedrock, SageMaker | Azure AI Foundry, Azure Machine Learning | Vertex AI |
+| Lab area | Local | Azure | AWS | GCP |
+| --- | --- | --- | --- | --- |
+| Object storage | local filesystem / MinIO | Blob Storage | S3 | Cloud Storage |
+| App hosting | local FastAPI / Docker | App Service, Functions, Container Apps | Lambda, ECS, EC2 | Cloud Run, Cloud Functions, Compute Engine |
+| Managed database | local PostgreSQL / SQLite | Azure SQL Database | RDS | Cloud SQL |
+| Analytics | local DuckDB / PostgreSQL | Synapse, Fabric concepts | Athena, Redshift | BigQuery |
+| Secrets | local env file pattern, never committed | Key Vault | Secrets Manager, Parameter Store | Secret Manager |
+| Monitoring | local logs and metrics | Azure Monitor, Log Analytics | CloudWatch | Cloud Monitoring |
+| AI platform | local model/API workflow | Azure AI Foundry, Azure Machine Learning | Bedrock, SageMaker | Vertex AI |
+
+## Planned 48-Lab Sequence
+
+### Phase 1 — CS and Engineering Foundations
+
+| Lab | Folder name | Main evidence |
+| --- | --- | --- |
+| 01 | `lab-01-local-development-environment/` | Python, R, Git, Docker, SQL, repo layout, and first project skeleton |
+| 02 | `lab-02-cs-introduction-for-ai/` | variables, types, functions, files, data structures, and reusable notes |
+| 03 | `lab-03-algorithms-for-data-and-ai/` | search, grouping, sorting, deduplication, and complexity notes |
+| 04 | `lab-04-http-rest-fastapi-basics/` | local FastAPI service for the growing AI project |
+| 05 | `lab-05-sql-and-postgresql-foundations/` | local database for datasets, runs, prompts, outputs, and evaluations |
+| 06 | `lab-06-cloud-foundations-azure-aws-gcp/` | local-to-cloud map for identity, storage, compute, networking, and monitoring |
+
+### Phase 2 — Data Engineering and R Before AI
+
+| Lab | Folder name | Main evidence |
+| --- | --- | --- |
+| 07 | `lab-07-data-engineering-lifecycle-and-source-systems/` | source-system inventory and data lifecycle for the cumulative project |
+| 08 | `lab-08-local-data-ingestion-csv-json-api/` | CSV, JSON, or API ingestion into the local database |
+| 09 | `lab-09-storage-design-files-tables-object-storage/` | storage layout, database tables, object-storage mapping, and trade-offs |
+| 10 | `lab-10-sql-transformation-and-modelling/` | curated tables, SQL transformations, and modelled dataset |
+| 11 | `lab-11-r-data-wrangling-and-visualisation/` | R/tidyverse analysis, plots, and EDA notes for the same dataset |
+| 12 | `lab-12-python-and-r-dataset-comparison/` | same dataset analysed in Python and R with comparison notes |
+| 13 | `lab-13-data-quality-checks-and-validation/` | validation rules, failed-record handling, and data quality report |
+| 14 | `lab-14-pipeline-testing-and-repeatable-execution/` | repeatable pipeline command, tests, and regression checks |
+| 15 | `lab-15-metadata-lineage-and-documentation/` | metadata table, lineage notes, data dictionary, and stakeholder summary |
+| 16 | `lab-16-monitoring-and-incident-handling-for-pipelines/` | broken pipeline scenario, incident note, monitoring signal, and recovery evidence |
+| 17 | `lab-17-data-product-and-serving-layer-design/` | data product contract, consumers, quality expectations, and serving design |
+| 18 | `lab-18-data-engineering-review-local-azure-aws-gcp/` | review of data pipeline locally and across Azure, AWS, and GCP mappings |
+
+### Phase 3 — ML and Statistical Learning
+
+| Lab | Folder name | Main evidence |
+| --- | --- | --- |
+| 19 | `lab-19-exploratory-data-analysis-python-r/` | EDA in Python and R using the project dataset |
+| 20 | `lab-20-practical-statistics-for-ai-datasets/` | distributions, sampling, uncertainty, and statistical interpretation |
+| 21 | `lab-21-first-supervised-ml-model/` | baseline supervised model using the prepared dataset |
+| 22 | `lab-22-feature-engineering/` | feature creation, feature documentation, and leakage checks |
+| 23 | `lab-23-train-test-validation-and-metrics/` | train/test split, validation approach, and metrics |
+| 24 | `lab-24-classification-and-regression-comparison/` | classification and regression comparison where appropriate |
+| 25 | `lab-25-error-analysis-and-model-limitations/` | model errors, false positives/negatives, limitations, and improvement plan |
+| 26 | `lab-26-model-evaluation-report-python-r/` | evaluation report using Python and R perspectives |
+| 27 | `lab-27-local-model-serving-with-fastapi/` | local model-serving endpoint added to the existing API |
+| 28 | `lab-28-ml-workflow-azure-ml-sagemaker-vertex-ai/` | local ML workflow mapped to Azure ML, SageMaker, and Vertex AI |
+
+### Phase 4 — LLMs, RAG, and Agents
+
+| Lab | Folder name | Main evidence |
+| --- | --- | --- |
+| 29 | `lab-29-llm-foundations-and-safe-usage/` | LLM basics, task boundaries, safe-use notes, and project use case |
+| 30 | `lab-30-prompt-engineering-and-structured-outputs/` | prompt templates, structured outputs, and versioned prompt records |
+| 31 | `lab-31-prompt-evaluation-and-failure-cases/` | prompt tests, expected outputs, actual outputs, and failure analysis |
+| 32 | `lab-32-embeddings-and-semantic-search/` | embeddings and local semantic search over safe project documents |
+| 33 | `lab-33-retrieval-index-design/` | indexing strategy, chunking notes, metadata, and retrieval tests |
+| 34 | `lab-34-rag-over-runbooks-tickets-or-lab-notes/` | RAG workflow added to the cumulative project |
+| 35 | `lab-35-rag-evaluation-citations-and-hallucination-checks/` | citation checks, retrieval quality, hallucination controls, and evaluation notes |
+| 36 | `lab-36-ai-agents-planning-tools-memory-state/` | agent design with tools, memory, state, and boundaries |
+| 37 | `lab-37-agent-workflow-simulation-human-approval/` | agent workflow simulation with human approval gates |
+| 38 | `lab-38-agent-safety-failure-modes-and-escalation/` | agent failure modes, escalation criteria, and safety review |
+
+### Phase 5 — Production AI Across Local, Azure, AWS, and GCP
+
+| Lab | Folder name | Main evidence |
+| --- | --- | --- |
+| 39 | `lab-39-local-ai-application-end-to-end/` | local end-to-end AI/data application using previous components |
+| 40 | `lab-40-deploy-ai-app-on-azure/` | Azure deployment or detailed Azure implementation evidence |
+| 41 | `lab-41-deploy-ai-app-on-aws/` | AWS deployment or detailed AWS implementation evidence |
+| 42 | `lab-42-deploy-ai-app-on-gcp/` | GCP deployment or detailed GCP implementation evidence |
+| 43 | `lab-43-secrets-identity-and-access-control-cross-cloud/` | local, Azure, AWS, and GCP secrets and identity comparison |
+| 44 | `lab-44-monitoring-and-observability-cross-cloud/` | local logs plus Azure Monitor, CloudWatch, and Cloud Monitoring mapping |
+| 45 | `lab-45-performance-latency-throughput-and-cost-cross-cloud/` | performance and cost review across local and cloud options |
+| 46 | `lab-46-ai-governance-data-handling-and-incident-response/` | governance, data handling, incident process, and production readiness |
+
+### Phase 6 — Capstone
+
+| Lab | Folder name | Main evidence |
+| --- | --- | --- |
+| 47 | `lab-47-capstone-design-architecture-data-cloud-risk-evaluation/` | architecture, dataset, cloud plan, risk register, and evaluation plan |
+| 48 | `lab-48-capstone-build-demo-monitoring-and-interview-story/` | working AI/data app, tests, monitoring notes, demo evidence, and interview story |
 
 ## Manual-First Rule
 
@@ -177,10 +269,17 @@ Each completed AI lab should include:
 
 * lab summary
 * target job evidence
-* `AI Engineering` chapter used
+* cumulative build dependency
+* new capability added
+* previous artefacts reused
+* integration point with the growing project
+* regression check where relevant
+* source chapter or section used
 * supporting reference table
 * coverage ledger update
 * embedded-layer table where relevant
+* local implementation evidence where relevant
+* Azure / AWS / GCP mapping or implementation evidence where relevant
 * manual baseline where relevant
 * AI-assisted follow-up where relevant
 * files created or changed
