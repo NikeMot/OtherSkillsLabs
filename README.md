@@ -1,31 +1,19 @@
-# Other Skills Labs
+# Mac and AI Labs
 
 ## Overview
 
-The `OtherSkillsLabs` repository contains hands-on labs for professional capability areas that sit outside the main infrastructure lab programme.
+The `OtherSkillsLabs` repository now supports one visible track: `Mac and AI`.
 
-The repository focuses on six technical topics:
+The track has two primary pillars:
 
-* Mac / Apple administration
-* Computer science foundations
-* Data engineering
-* AWS
-* Google Cloud Platform
-* AI / LLM engineering
+* Mac / Apple Administration
+* AI Engineering
 
-Every lab also develops the non-technical leverage skills needed to progress from Service Desk into stronger infrastructure, platform, data, cloud, SRE, and AI-enabled operations roles:
-
-* structured thinking
-* social and conversation skills
-* communication under pressure
-* personal branding
-* interview technique
-* leadership from the current role
-* evidence-based self-development
+Computer Science Foundations, Data Engineering, R, AWS, Azure, and GCP are not removed. They are embedded support threads that run through the AI side of the track so the learner still covers the material originally planned across the wider programme.
 
 The aim is not just to learn tools. The aim is to create proof that technical work can be investigated, explained, documented, discussed, and converted into career evidence.
 
-The lab series is aligned to target junior roles in backend development, data engineering, cloud engineering, AI engineering, SRE, platform, and operations-adjacent work. See `docs/target-role-alignment.md` for the role-to-lab mapping.
+See `docs/mac-and-ai-track-standard.md` for the full track standard.
 
 ---
 
@@ -33,7 +21,11 @@ The lab series is aligned to target junior roles in backend development, data en
 
 The goals of this repository are to:
 
-* build practical capability in Apple administration, CS foundations, data engineering, AWS, GCP, and AI
+* build practical capability in Mac administration and AI engineering
+* keep computer science foundations inside the AI learning path
+* keep data engineering inside the AI learning path through datasets, pipelines, quality checks, and data products
+* add R for data analysis, statistics, visualisation, and statistical learning
+* use AWS, Azure, and GCP as a cross-cloud implementation layer
 * practise production-style troubleshooting and evidence collection
 * turn every lab into interview, CV, LinkedIn, and recruiter-facing proof
 * improve written and verbal communication around technical work
@@ -44,14 +36,16 @@ The goals of this repository are to:
 
 ## Skills covered
 
-| Area | Status | Topics |
+| Area | Status | Role in the track |
 | ---- | ------ | ------ |
-| Mac / Apple Administration | Not started | macOS support, FileVault, Keychain, MDM, Apple Business Manager, profiles, certificates, enterprise troubleshooting |
-| Computer Science Foundations | Not started | maths for SRE, logic, data structures, algorithms, operating systems concepts, complexity, reliability thinking |
-| Data Engineering | Not started | SQL, relational modelling, data pipelines, data quality, analytics, reporting, storage concepts, data-intensive systems |
-| AWS | Not started | IAM, VPC, EC2, S3, RDS, CloudWatch, Route 53, load balancing, reliability, cost awareness |
-| Google Cloud Platform | Not started | IAM, VPC, Compute Engine, Cloud Storage, Cloud SQL, Cloud Monitoring, Cloud DNS, load balancing, reliability, cost awareness |
-| AI / LLM Engineering | Not started | prompt engineering, ticket triage, RAG, evaluation, hallucination checks, AI-assisted operations |
+| Mac / Apple Administration | Not started | Primary pillar: macOS support, FileVault, Keychain, MDM, Apple Business Manager, profiles, certificates, enterprise troubleshooting |
+| AI Engineering | Not started | Primary pillar: AI Engineering backbone, ML foundations, LLMs, RAG, agents, evaluation, observability, AI applications |
+| Computer Science Foundations | Embedded | CS depth for AI: maths, logic, data structures, algorithms, operating systems, complexity, reliability thinking |
+| Data Engineering | Embedded | Data foundation for AI: SQL, modelling, pipelines, data quality, metadata, lineage, serving layers, data products |
+| R | Embedded | Data analysis, visualisation, statistics, statistical learning, model comparison, reporting |
+| AWS | Embedded | Cross-cloud mapping and implementation option for storage, compute, databases, monitoring, identity, and AI services |
+| Azure | Embedded | Cross-cloud mapping and implementation option for storage, compute, databases, monitoring, identity, and AI services |
+| Google Cloud Platform | Embedded | Cross-cloud mapping and implementation option for storage, compute, databases, monitoring, identity, and AI services |
 
 ---
 
@@ -60,47 +54,35 @@ The goals of this repository are to:
 | Path | Purpose |
 | ---- | ------- |
 | `docs/` | General documentation, lab standards, decisions, and evidence rules |
-| `01-mac-apple-administration/` | macOS and Apple enterprise administration labs |
-| `02-computer-science-foundations/` | Maths, logic, algorithms, systems concepts, and reliability foundations |
-| `03-data-engineering/` | SQL, databases, data quality, pipelines, and operational data labs |
-| `04-aws/` | AWS cloud administration, operations, and reliability labs |
-| `05-gcp/` | Google Cloud Platform administration, operations, and reliability labs |
-| `06-ai/` | AI, LLM, prompt engineering, RAG, and AI operations labs |
+| `01-mac-apple-administration/` | macOS and Apple enterprise administration labs; unchanged Mac pillar |
+| `02-computer-science-foundations/` | CS foundation material kept as an embedded AI-supporting thread |
+| `03-data-engineering/` | Data engineering material kept as an embedded AI-supporting thread, including R where useful |
+| `04-aws/` | AWS reference and implementation material for cross-cloud mapping |
+| `05-gcp/` | GCP reference and implementation material for cross-cloud mapping |
+| `06-ai/` | Main AI Engineering course and AI application labs |
 
-The numbered folders represent topic areas. Lab folders inside each topic should use lowercase, hyphenated names, for example:
-
-```text
-01-mac-apple-administration/
-└── lab-01-enterprise-mac-access-issue/
-
-02-computer-science-foundations/
-└── lab-01-sre-maths-and-reliability-basics/
-
-03-data-engineering/
-└── lab-01-query-support-ticket-data/
-
-04-aws/
-└── lab-01-aws-account-and-iam-basics/
-
-05-gcp/
-└── lab-01-gcp-project-and-iam-basics/
-
-06-ai/
-└── lab-01-ai-assisted-ticket-triage/
-```
+The numbered folders remain for organisation and evidence management. The visible track name is still `Mac and AI`.
 
 ---
 
 ## Lab Design Rule
 
-Each lab has one primary technical topic:
+Each lab belongs to one of the two visible pillars:
 
 1. Mac / Apple Administration
-2. Computer Science Foundations
-3. Data Engineering
-4. AWS
-5. Google Cloud Platform
-6. AI
+2. AI Engineering
+
+Mac labs follow the existing Mac curriculum and remain unchanged.
+
+AI labs must include relevant embedded layers where useful:
+
+* computer science foundation
+* data engineering foundation
+* R analysis or statistical learning
+* AWS mapping or implementation option
+* Azure mapping or implementation option
+* GCP mapping or implementation option
+* SRE or operations evidence
 
 Every lab must also include these leverage layers:
 
@@ -127,7 +109,7 @@ Each lab folder should contain a lab write-up with:
 * verification evidence
 * issues encountered
 * decisions made
-* security and production considerations
+* production considerations
 * final outcome
 * what was learned
 * what would be improved in production
@@ -135,25 +117,13 @@ Each lab folder should contain a lab write-up with:
 * completion checklist
 * reflection questions
 
-Start with the first lab in the relevant topic folder.
+Start with the first lab in either the Mac pillar or the AI pillar.
 
 ---
 
-## Security and Privacy Notes
+## Privacy Notes
 
-This repository must not contain:
-
-* passwords
-* API keys
-* SSH private keys
-* `.env` files
-* cloud credentials
-* company data
-* private user data
-* tenant identifiers
-* screenshots containing sensitive account information
-* copyrighted books, PDFs, or EPUBs
-* confidential recruiter or interview material
+This repository must not contain private values, company data, private user data, account identifiers, sensitive screenshots, copied book text, or confidential recruiter/interview material.
 
 All examples should use fictional data, personal lab data, or safely sanitised outputs.
 
@@ -161,4 +131,4 @@ All examples should use fictional data, personal lab data, or safely sanitised o
 
 ## Current Status
 
-Repository structure updated to support six topic areas: Mac / Apple administration, computer science foundations, data engineering, AWS, GCP, and AI.
+Repository structure updated to support the `Mac and AI` track while preserving the original CS, data engineering, R, AWS, Azure, GCP, SRE, and operations learning outcomes as embedded layers.
