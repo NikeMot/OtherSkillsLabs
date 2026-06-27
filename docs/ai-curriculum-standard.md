@@ -47,6 +47,34 @@ Across the 48 labs, this project should gradually gain:
 * GCP deployment or mapping
 * final capstone documentation and demo evidence
 
+## Cross-Cutting Requirements Rule
+
+The 48 AI labs must embed the mandatory requirements in `docs/ai-cross-cutting-requirements.md`.
+
+These requirements do not increase the lab count. They are built into the existing 48 labs.
+
+Every AI lab should include relevant evidence for:
+
+* software engineering discipline
+* MLOps / LLMOps
+* AI security
+* evaluation-first practice
+* workflow orchestration
+* data and model governance
+* minimal product or interface layer
+
+The cross-cutting checklist should be completed where relevant:
+
+| Cross-cutting area | Evidence in this lab |
+| --- | --- |
+| Software engineering discipline | Code, structure, tests, docs, or repeatable execution |
+| MLOps / LLMOps | Versioning, tracking, change log, rollback, or regression check |
+| AI security | Security risk, control, or mitigation |
+| Evaluation-first practice | Expected output, actual output, scoring, or review |
+| Workflow orchestration | Repeatable command, task runner, scheduled job, or pipeline note |
+| Governance | Data dictionary, lineage, model card, risk register, or approval note |
+| Product/interface layer | CLI, API, dashboard, report, or demo improvement |
+
 ## Target Job Rule
 
 The junior AI engineer job description must shape every lab.
@@ -278,6 +306,7 @@ Each completed AI lab should include:
 * supporting reference table
 * coverage ledger update
 * embedded-layer table where relevant
+* cross-cutting requirements checklist where relevant
 * local implementation evidence where relevant
 * Azure / AWS / GCP mapping or implementation evidence where relevant
 * manual baseline where relevant
