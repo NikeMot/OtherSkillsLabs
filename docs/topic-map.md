@@ -67,11 +67,13 @@ Planned lab themes:
 
 ## 03 — Data Engineering
 
-The Data Engineering track uses `Fundamentals of Data Engineering` as the foundation. The first 11 labs map to one chapter each. Labs 12-19 are drill labs. Lab 20 is the capstone.
+The Data Engineering track uses `Fundamentals of Data Engineering` as the foundation. The first 11 labs map to one chapter each. Labs 12-23 are drill and deepening labs. Lab 24 is the capstone.
 
 The track is augmented with `Designing Data-Intensive Applications`, `Database Internals`, `Data Engineering Design Patterns`, and `Redefining Data Engineering with AI`.
 
 Manual-first rule: complete the data engineering task manually first, then use the AI-focused source to learn how AI can assist after the manual method is understood.
+
+The junior data engineering job description shapes every lab through target job evidence.
 
 Planned lab themes:
 
@@ -88,18 +90,23 @@ Planned lab themes:
 11. Future of data engineering and AI awareness — Fundamentals of Data Engineering chapter 11
 12. SQL and data modelling drill
 13. Ingestion drill
-14. Transformation drill
+14. Transformation and curation drill
 15. Data quality validation drill
 16. Pipeline testing and automation drill
-17. Performance, cost, and scalability drill
-18. Monitoring and incident drill
-19. Data product documentation drill
-20. Junior data engineering capstone
+17. Storage and database internals drill
+18. Query performance and cost drill
+19. Batch, streaming, and CDC drill
+20. Monitoring and incident drill
+21. Governance, lineage, and documentation drill
+22. Data product and serving layer drill
+23. AI augmentation after manual data engineering
+24. Junior data engineering capstone
 
 Every Data Engineering lab must include:
 
 * target job evidence
 * whole-chapter reference notes
+* coverage ledger update
 * manual workflow
 * augmentation reference notes
 * AI-assisted follow-up only after the manual workflow
