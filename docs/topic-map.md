@@ -67,22 +67,45 @@ Planned lab themes:
 
 ## 03 — Data Engineering
 
+The Data Engineering track uses `Fundamentals of Data Engineering` as the foundation. The first 11 labs map to one chapter each. Labs 12-19 are drill labs. Lab 20 is the capstone.
+
+The track is augmented with `Designing Data-Intensive Applications`, `Database Internals`, `Data Engineering Design Patterns`, and `Redefining Data Engineering with AI`.
+
+Manual-first rule: complete the data engineering task manually first, then use the AI-focused source to learn how AI can assist after the manual method is understood.
+
 Planned lab themes:
 
-1. Query support ticket data with SQL
-2. Model users, devices, tickets, services, alerts, and incidents
-3. Build a small operational SQLite database
-4. Join support, asset, and incident records
-5. Analyse incident trends and service reliability signals
-6. Create a data quality check workflow
-7. Build a simple ETL pipeline from CSV to database
-8. Create a database-backed evidence report
-9. Understand indexes and query performance basics
-10. Practise backup and restore concepts
-11. Design a small SRE dashboard dataset
-12. Build a basic SRE helper application using data
-13. Use Designing Data-Intensive Applications concepts to reason about reliability, scalability, and maintainability
-14. Turn data engineering evidence into an interview story and portfolio note
+1. Data engineering described — Fundamentals of Data Engineering chapter 1
+2. Data engineering lifecycle — Fundamentals of Data Engineering chapter 2
+3. Good data architecture — Fundamentals of Data Engineering chapter 3
+4. Technology selection for data pipelines — Fundamentals of Data Engineering chapter 4
+5. Source systems and operational data — Fundamentals of Data Engineering chapter 5
+6. Data storage layouts — Fundamentals of Data Engineering chapter 6
+7. Data ingestion pipeline — Fundamentals of Data Engineering chapter 7
+8. Query, modelling, and transformation — Fundamentals of Data Engineering chapter 8
+9. Serving data for analytics and AI — Fundamentals of Data Engineering chapter 9
+10. Data governance, quality, and access — Fundamentals of Data Engineering chapter 10
+11. Future of data engineering and AI awareness — Fundamentals of Data Engineering chapter 11
+12. SQL and data modelling drill
+13. Ingestion drill
+14. Transformation drill
+15. Data quality validation drill
+16. Pipeline testing and automation drill
+17. Performance, cost, and scalability drill
+18. Monitoring and incident drill
+19. Data product documentation drill
+20. Junior data engineering capstone
+
+Every Data Engineering lab must include:
+
+* target job evidence
+* whole-chapter reference notes
+* manual workflow
+* augmentation reference notes
+* AI-assisted follow-up only after the manual workflow
+* data quality or verification evidence
+* stakeholder-facing summary
+* recruiter-facing summary
 
 ---
 
@@ -154,7 +177,7 @@ Examples:
 ```text
 01-mac-apple-administration/lab-01-apple-device-management-foundations/
 02-computer-science-foundations/lab-01-sre-maths-and-reliability-basics/
-03-data-engineering/lab-01-query-support-ticket-data/
+03-data-engineering/lab-01-data-engineering-described/
 04-aws/lab-01-aws-account-and-iam-basics/
 05-gcp/lab-01-gcp-project-and-iam-basics/
 06-ai/lab-01-ai-assisted-ticket-triage/
