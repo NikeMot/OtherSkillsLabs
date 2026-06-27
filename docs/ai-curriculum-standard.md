@@ -4,7 +4,7 @@
 
 This document defines how the AI labs should be designed and documented.
 
-The track targets junior AI engineer, AI-enabled backend, and AI-enabled SRE or operations roles. The evidence should show Python, data preparation, model evaluation, LLM application design, retrieval workflows, prompt engineering, agent awareness, deployment thinking, monitoring, responsible use, and clear communication.
+The track targets junior AI engineer, AI-enabled backend, and AI-enabled SRE or operations roles. The evidence should show Python, R, data preparation, model evaluation, LLM application design, retrieval workflows, prompt engineering, agent awareness, deployment thinking, monitoring, responsible use, and clear communication.
 
 ## Target Job Rule
 
@@ -15,14 +15,15 @@ Every lab must include a `Target job evidence` section showing how the lab maps 
 The target job requirements are:
 
 * Python for AI and ML workflows
-* NumPy, Pandas, and data preparation
+* R for data analysis, statistics, visualisation, and statistical learning where useful
+* NumPy, Pandas, tidyverse, and data preparation
 * data cleaning and feature engineering
 * model building and model evaluation
-* scikit-learn, TensorFlow, or PyTorch awareness
+* scikit-learn, TensorFlow, PyTorch, or R statistical learning awareness
 * NLP, retrieval, recommendation, or computer-vision awareness where relevant
 * deployment and integration into real applications
 * Git and modern development practice
-* cloud or platform awareness
+* AWS, Azure, and GCP platform awareness
 * communication with engineers, data scientists, product teams, and stakeholders
 * safe, responsible, and well-evaluated AI behaviour
 
@@ -47,10 +48,13 @@ Supporting sources:
 2. `Hands-On Large Language Models` — LLM concepts, embeddings, retrieval, transformers, RAG, and practical LLM workflows
 3. `Prompt Engineering for LLMs` — prompt design, structured outputs, prompt evaluation, and LLM application control
 4. `An Introduction to Statistical Learning with Python` — classical ML, supervised learning, model evaluation, overfitting, validation, and feature engineering
-5. `AI Systems Performance Engineering` — performance, inference cost, scaling, deployment constraints, and operational behaviour
-6. `Observability Engineering` — AI observability, evaluation, monitoring, production signals, and operational visibility
-7. `Redefining Data Engineering with AI` — AI-assisted data workflows, human-in-the-loop oversight, governance, and data product thinking
-8. `AI Agents: The Definitive Guide` — agent design, tools, planning, memory, orchestration, safety, and evaluation; verify file availability before lab documentation
+5. `An Introduction to Statistical Learning with R` — statistical learning and model practice in R
+6. `R for Data Science` — tidy data, transformation, visualisation, modelling workflow, and reporting
+7. `Practical Statistics for Data Scientists` — statistics, distributions, sampling, experiments, and practical statistical reasoning
+8. `AI Systems Performance Engineering` — performance, inference cost, scaling, deployment constraints, and operational behaviour
+9. `Observability Engineering` — AI observability, evaluation, monitoring, production signals, and operational visibility
+10. `Redefining Data Engineering with AI` — AI-assisted data workflows, human-in-the-loop oversight, governance, and data product thinking
+11. `AI Agents: The Definitive Guide` — agent design, tools, planning, memory, orchestration, safety, and evaluation; verify file availability before lab documentation
 
 ## Whole-Chapter and Coverage Rule
 
@@ -75,18 +79,34 @@ The coverage ledger should track:
 
 No copied book text should be committed to the repository.
 
+## Embedded Layer Rule
+
+AI labs should preserve the learning outcomes from the wider original track.
+
+Where relevant, each AI lab should include:
+
+| Layer | What to include |
+| --- | --- |
+| CS foundation | data structures, algorithms, OS concepts, complexity, networking, probability, or reliability maths |
+| Data engineering | ingestion, transformation, quality, metadata, lineage, serving layer, or data product thinking |
+| R | R data wrangling, visualisation, statistics, modelling, or model comparison |
+| AWS | matching AWS service or implementation option |
+| Azure | matching Azure service or implementation option |
+| GCP | matching GCP service or implementation option |
+| SRE / operations | reliability, monitoring, incident review, limitations, or production improvement |
+
 ## Planned 30-Lab Sequence
 
 | Lab | Folder name | Backbone | Main evidence |
 | --- | --- | --- | --- |
 | 01 | `lab-01-ai-engineering-foundations-part-1/` | AI Engineering chapter 1 | AI engineering role map, use-case selection, risks, and target job evidence |
 | 02 | `lab-02-ai-engineering-foundations-part-2/` | AI Engineering chapter 1 | Small AI workflow design with evaluation criteria |
-| 03 | `lab-03-python-data-preparation-for-ai-part-1/` | AI Engineering chapter 2 | Python, NumPy, Pandas, and data preparation evidence |
-| 04 | `lab-04-python-data-preparation-for-ai-part-2/` | AI Engineering chapter 2 | Cleaned dataset, features, assumptions, and validation notes |
+| 03 | `lab-03-python-and-r-data-preparation-for-ai-part-1/` | AI Engineering chapter 2 | Python, R, NumPy, Pandas, tidyverse, and data preparation evidence |
+| 04 | `lab-04-python-and-r-data-preparation-for-ai-part-2/` | AI Engineering chapter 2 | Cleaned dataset, features, assumptions, visualisation, and validation notes |
 | 05 | `lab-05-first-ml-model-part-1/` | AI Engineering chapter 3 | Baseline supervised model and manual evaluation |
-| 06 | `lab-06-first-ml-model-part-2/` | AI Engineering chapter 3 | Error analysis, feature iteration, and model limitations |
+| 06 | `lab-06-first-ml-model-part-2/` | AI Engineering chapter 3 | Error analysis, feature iteration, R/Python comparison where useful, and model limitations |
 | 07 | `lab-07-model-evaluation-part-1/` | AI Engineering chapter 4 | Train/test split, metrics, baseline comparison, and evaluation notes |
-| 08 | `lab-08-model-evaluation-part-2/` | AI Engineering chapter 4 | Overfitting, validation, scoring, and decision threshold notes |
+| 08 | `lab-08-model-evaluation-part-2/` | AI Engineering chapter 4 | Overfitting, validation, scoring, decision threshold notes, and statistical interpretation |
 | 09 | `lab-09-llm-foundations-part-1/` | AI Engineering chapter 5 | LLM concept notes and safe usage boundaries |
 | 10 | `lab-10-llm-foundations-part-2/` | AI Engineering chapter 5 | LLM-based support workflow with expected and actual outputs |
 | 11 | `lab-11-prompt-engineering-part-1/` | AI Engineering chapter 6 | Prompt design, task framing, and structured input/output examples |
@@ -107,7 +127,7 @@ No copied book text should be committed to the repository.
 | 26 | `lab-26-ai-safety-and-governance-part-2/` | AI Engineering chapter 13 | Human-in-the-loop workflow and escalation criteria |
 | 27 | `lab-27-ai-for-data-and-operations-part-1/` | AI Engineering chapter 14 | AI-assisted data or operations workflow after manual baseline |
 | 28 | `lab-28-ai-for-data-and-operations-part-2/` | AI Engineering chapter 14 | Evaluation of AI assistance, limitations, and productivity notes |
-| 29 | `lab-29-junior-ai-engineer-capstone-part-1/` | AI Engineering chapter 15 | Capstone design, dataset, evaluation plan, and architecture |
+| 29 | `lab-29-junior-ai-engineer-capstone-part-1/` | AI Engineering chapter 15 | Capstone design, dataset, evaluation plan, architecture, and cross-cloud map |
 | 30 | `lab-30-junior-ai-engineer-capstone-part-2/` | AI Engineering chapter 15 | Working AI application, tests, monitoring notes, limitations, and interview evidence |
 
 ## Supporting Source Placement
@@ -117,6 +137,9 @@ Use the supporting sources across the course as follows:
 | Supporting source | Main placement |
 | --- | --- |
 | `An Introduction to Statistical Learning with Python` | Labs 03-08 for ML foundations, features, baselines, validation, metrics, and error analysis |
+| `An Introduction to Statistical Learning with R` | Labs 05-08 for statistical learning comparison and R-based model understanding |
+| `R for Data Science` | Labs 03-04 and data-heavy labs for tidy data, visualisation, transformation, and reporting |
+| `Practical Statistics for Data Scientists` | Labs 07-08, 21-24, and evaluation-heavy labs for practical statistical reasoning |
 | `Hands-On Large Language Models` | Labs 09-16 for LLM concepts, embeddings, semantic search, and RAG |
 | `Prompt Engineering for LLMs` | Labs 11-12 and revisited in Labs 15-18 for prompts, structured outputs, and evaluation |
 | `AI Agents: The Definitive Guide` | Labs 17-18 and revisited in the capstone for agentic workflows, tool use, control, memory, and safety |
@@ -124,19 +147,27 @@ Use the supporting sources across the course as follows:
 | `Observability Engineering` | Labs 23-24 and capstone monitoring notes |
 | `Redefining Data Engineering with AI` | Labs 27-28 for manual-first AI-assisted data and operations workflows |
 
+## Multi-Cloud Placement
+
+Every cloud-relevant AI lab should include an AWS / Azure / GCP mapping.
+
+Examples:
+
+| Lab area | AWS | Azure | GCP |
+| --- | --- | --- | --- |
+| Object storage | S3 | Blob Storage | Cloud Storage |
+| App hosting | Lambda, ECS, EC2 | App Service, Functions, Container Apps | Cloud Run, Cloud Functions, Compute Engine |
+| Managed database | RDS | Azure SQL Database | Cloud SQL |
+| Analytics | Athena, Redshift | Synapse, Fabric concepts | BigQuery |
+| Secrets | Secrets Manager, Parameter Store | Key Vault | Secret Manager |
+| Monitoring | CloudWatch | Azure Monitor, Log Analytics | Cloud Monitoring |
+| AI platform | Bedrock, SageMaker | Azure AI Foundry, Azure Machine Learning | Vertex AI |
+
 ## Manual-First Rule
 
 Where a lab involves data preparation, model building, evaluation, retrieval, or operations workflow design, complete the manual baseline first.
 
-AI tools may be used afterwards to assist with:
-
-* review
-* documentation
-* test case generation
-* comparison of approaches
-* evaluation checklist creation
-* explanation
-* improvement ideas
+AI tools may be used afterwards to assist with review, documentation, test case generation, comparison of approaches, evaluation checklist creation, explanation, and improvement ideas.
 
 AI assistance must not replace understanding, verification, or manual reasoning.
 
@@ -149,6 +180,7 @@ Each completed AI lab should include:
 * `AI Engineering` chapter used
 * supporting reference table
 * coverage ledger update
+* embedded-layer table where relevant
 * manual baseline where relevant
 * AI-assisted follow-up where relevant
 * files created or changed
