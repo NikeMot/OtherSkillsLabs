@@ -10,7 +10,7 @@ The aim is to avoid random learning. Each topic should produce evidence that map
 
 | Lab area | Target role family | Main evidence to produce |
 | --- | --- | --- |
-| `01-mac-apple-administration/` | Mac / Apple support and administration | macOS troubleshooting, Apple enterprise support workflow, user communication, escalation evidence |
+| `01-mac-apple-administration/` | Mac Support Specialist / Mac-focused MSP support | macOS troubleshooting, 1st/2nd line support, Apple device management, identity platforms, networking, customer communication, documentation, escalation evidence |
 | `02-computer-science-foundations/` | Junior backend / SRE foundations | Python, FastAPI, REST APIs, PostgreSQL integration, GitHub workflow, Docker, reliability and performance thinking |
 | `03-data-engineering/` | Junior Data Engineer | SQL, Python, pipelines, datasets, data models, data quality checks, documentation, testing, monitoring, GCP awareness |
 | `04-aws/` | Junior Cloud Engineer / SRE | IAM, networking, compute, storage, monitoring, troubleshooting, backup, IaC awareness, cost and reliability evidence |
@@ -21,24 +21,72 @@ The aim is to avoid random learning. Each topic should produce evidence that map
 
 ## 01 — Mac / Apple Administration
 
-### Target outcome
+### Target role signal
 
-The Mac / Apple administration track should prepare evidence for Apple support and endpoint administration work.
+The target role is a Mac Support Specialist position with a Mac-focused Managed Service Provider in Manchester.
+
+The role includes:
+
+* providing 1st and 2nd line support for Mac devices and macOS environments
+* diagnosing, troubleshooting, and resolving hardware, software, and connectivity issues
+* delivering strong customer service through clear technical support and communication
+* supporting Apple device management and identity platforms including Addigy, Jamf, JumpCloud, and Okta
+* escalating complex issues to senior engineers when required
+* maintaining accurate documentation of incidents, resolutions, and internal processes
+* contributing to continuous service improvement and user-experience improvements
+* keeping up to date with Apple, identity, endpoint-management, and support best practices
+* applying networking fundamentals during troubleshooting
+* working independently and as part of a technical team
+* being mobile when required for client-site support
+
+### Lab direction
+
+The Mac / Apple administration track should be practical, MSP-style, and support-ticket driven.
+
+It should cover:
+
+* macOS support fundamentals
+* 1st and 2nd line troubleshooting workflow
+* hardware, software, and connectivity triage
+* macOS network troubleshooting
+* FileVault, Keychain, Gatekeeper, certificates, and profiles
+* Apple Business Manager concepts
+* MDM concepts, especially Jamf and Addigy-style workflows
+* identity platform concepts, especially JumpCloud and Okta-style workflows
+* escalation notes and handover quality
+* customer communication and expectation management
+* incident and resolution documentation
+* service improvement notes
+* professional certification readiness for Apple support environments
 
 ### Evidence to produce
 
 Labs should show ability to:
 
-* troubleshoot macOS access and application issues
-* explain FileVault, Keychain, Gatekeeper, certificates, and profiles
-* understand Apple Business Manager and MDM concepts
-* write clear user-facing support messages
-* create escalation-quality notes
+* troubleshoot macOS access, app, hardware, and connectivity issues
+* write clear customer-facing updates
+* create escalation-quality notes for senior engineers
+* document incidents, causes, fixes, and next actions
+* explain Apple device management concepts
+* explain identity and device access concepts involving Jamf, Addigy, JumpCloud, and Okta
+* use networking fundamentals during Mac support scenarios
 * distinguish what can be tested directly from what is documentation-based until real Mac access is available
+* turn each support scenario into interview evidence for a Mac-focused MSP role
 
-### Note
+### Priority lab evidence for this role
 
-A specific Mac / Apple target job description still needs to be added for precise alignment.
+Mac labs should prioritise evidence such as:
+
+* support ticket write-ups
+* troubleshooting decision trees
+* customer update examples
+* escalation notes
+* sanitised screenshots or command outputs where available
+* MDM/profile concept notes
+* identity-platform concept notes
+* network diagnostic notes
+* service improvement suggestions
+* recruiter-facing summaries
 
 ---
 
