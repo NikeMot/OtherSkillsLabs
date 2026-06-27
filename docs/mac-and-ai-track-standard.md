@@ -4,7 +4,7 @@
 
 This document defines the overall shape of the track.
 
-The visible track name is now `Mac and AI`.
+The visible track name is `Mac and AI`.
 
 The track has two primary pillars:
 
@@ -33,7 +33,7 @@ The difference is organisation: these become parts of a single Mac and AI track 
 
 ## Pillar 1 — Mac Administration
 
-The Mac labs remain unchanged.
+The Mac labs remain unchanged and separate.
 
 The Mac Administration pillar continues to use:
 
@@ -44,15 +44,35 @@ The Mac Administration pillar continues to use:
 * `The Practice of System and Network Administration` for operational execution discipline
 * the Mac-focused MSP job advert for role evidence
 
+Mac labs do not need to build into the AI cumulative project.
+
 ## Pillar 2 — AI Engineering
 
-The AI Engineering pillar uses `AI Engineering` as the backbone.
+The AI Engineering pillar is a cumulative 48-lab course.
 
-One `AI Engineering` chapter should produce two labs.
+Every AI lab should build on previous AI labs so that the section becomes one growing AI/data/operations system rather than disconnected exercises.
 
-The AI course is 30 labs total, assuming 15 backbone chapters.
+The AI project can be framed as an `AI Operations and Data Assistant` built with safe fictional or generated data.
 
-The AI pillar also absorbs the supporting knowledge originally held in the CS, Data Engineering, R, AWS, GCP, and cloud folders.
+The AI learning order is:
+
+1. CS and engineering foundations
+2. Data engineering and R foundations
+3. statistical learning and ML foundations
+4. LLMs, RAG, and agents
+5. production AI across local, Azure, AWS, and GCP
+6. capstone
+
+## Cumulative AI Build Rule
+
+Each AI lab must document:
+
+* previous lab dependencies used
+* new capability added
+* existing files, datasets, scripts, models, APIs, or documentation reused
+* integration point with the growing project
+* regression check showing previous functionality still works where relevant
+* updated architecture, data-flow, or component notes where relevant
 
 ## Computer Science Thread
 
@@ -87,7 +107,7 @@ The Data Engineering material should support AI labs through:
 
 ## R Thread
 
-R is now part of the data and AI learning path.
+R is part of the data and AI learning path.
 
 Drive resources found in the R folder:
 
@@ -109,24 +129,29 @@ R should not replace Python in the AI track. Python remains the primary implemen
 
 ## Multi-Cloud Thread
 
-AWS, Azure, and GCP are not active standalone headline tracks for now.
+Every major concept should be learned locally first.
 
-They become a cross-cloud implementation layer.
+Cloud-relevant concepts should then be mapped across Azure, AWS, and GCP.
 
-For every cloud-relevant concept, the learner should understand how it maps across all three platforms:
+The expected learning pattern is:
 
-| Capability | AWS | Azure | GCP |
-| --- | --- | --- | --- |
-| Object storage | S3 | Blob Storage | Cloud Storage |
-| Compute / app hosting | EC2, Lambda, ECS | App Service, Functions, Container Apps | Compute Engine, Cloud Run, Cloud Functions |
-| Managed relational database | RDS | Azure SQL Database | Cloud SQL |
-| Data warehouse / analytics | Redshift, Athena | Synapse, Fabric concepts | BigQuery |
-| Secrets | Secrets Manager, Parameter Store | Key Vault | Secret Manager |
-| Monitoring | CloudWatch | Azure Monitor, Log Analytics | Cloud Monitoring |
-| Identity and access | IAM | Entra ID, Azure RBAC | IAM |
-| AI platform | Bedrock, SageMaker | Azure AI Foundry, Azure Machine Learning | Vertex AI |
+1. local implementation
+2. Azure mapping or implementation
+3. AWS mapping or implementation
+4. GCP mapping or implementation
 
-The labs may use one platform hands-on at a time, but the documentation must include a short AWS / Azure / GCP mapping where the concept is cloud-relevant.
+The labs may use one platform hands-on at a time, but the documentation must include a short Azure / AWS / GCP mapping where the concept is cloud-relevant.
+
+| Capability | Local | Azure | AWS | GCP |
+| --- | --- | --- | --- | --- |
+| Object storage | filesystem / MinIO | Blob Storage | S3 | Cloud Storage |
+| Compute / app hosting | local FastAPI / Docker | App Service, Functions, Container Apps | EC2, Lambda, ECS | Compute Engine, Cloud Run, Cloud Functions |
+| Managed relational database | SQLite / PostgreSQL | Azure SQL Database | RDS | Cloud SQL |
+| Data warehouse / analytics | DuckDB / PostgreSQL | Synapse, Fabric concepts | Redshift, Athena | BigQuery |
+| Secrets | local env pattern, never committed | Key Vault | Secrets Manager, Parameter Store | Secret Manager |
+| Monitoring | local logs and metrics | Azure Monitor, Log Analytics | CloudWatch | Cloud Monitoring |
+| Identity and access | local users / app config | Entra ID, Azure RBAC | IAM | IAM |
+| AI platform | local model/API workflow | Azure AI Foundry, Azure Machine Learning | Bedrock, SageMaker | Vertex AI |
 
 ## Required Embedded-Layer Table
 
@@ -137,8 +162,9 @@ Every AI lab should include this table when relevant:
 | CS foundation | Concept used | Note, calculation, code, or explanation |
 | Data engineering | Data task used | Dataset, pipeline, quality check, or model |
 | R | R analysis or statistical method used | R script, notebook, plot, or comparison |
-| AWS | Equivalent service or implementation option | Mapping or lab evidence |
+| Local | Local implementation | Script, notebook, database, container, API, or application output |
 | Azure | Equivalent service or implementation option | Mapping or lab evidence |
+| AWS | Equivalent service or implementation option | Mapping or lab evidence |
 | GCP | Equivalent service or implementation option | Mapping or lab evidence |
 | SRE / operations | Reliability, observability, or incident thinking | Verification, monitoring note, or limitation |
 
@@ -148,4 +174,4 @@ A Mac and AI lab is complete only when it preserves the right scope.
 
 For Mac labs, this means Mac support, Apple device management, troubleshooting, documentation, and job evidence.
 
-For AI labs, this means AI Engineering plus the relevant CS, data, R, multi-cloud, and operations layers.
+For AI labs, this means cumulative AI Engineering plus the relevant CS, data, R, local, multi-cloud, and operations layers.
