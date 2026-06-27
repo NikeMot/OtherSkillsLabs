@@ -22,6 +22,38 @@ The role requires evidence of:
 * networking fundamentals for Mac support scenarios
 * continuous service improvement thinking
 
+## Primary Lab Skeleton
+
+Use `Apple Device Management` as the primary curriculum skeleton.
+
+Each lab should cover two chapters from `Apple Device Management`:
+
+```text
+Lab 01 -> Apple Device Management chapters 1-2
+Lab 02 -> Apple Device Management chapters 3-4
+Lab 03 -> Apple Device Management chapters 5-6
+Lab 04 -> Apple Device Management chapters 7-8
+Lab 05 -> Apple Device Management chapters 9-10
+Lab 06 -> Apple Device Management chapters 11-12
+Lab 07 -> Apple Device Management chapters 13-14
+Lab 08 -> Apple Device Management chapters 15-16
+Lab 09 -> Apple Device Management chapters 17-18
+Lab 10 -> Apple Device Management chapters 19-20
+Lab 11 -> Apple Device Management chapters 21-22
+Lab 12 -> Apple Device Management chapters 23-24 or final capstone coverage
+```
+
+If the edition being used has fewer or more chapters, keep the same rule: two chapters per lab until the book is complete, then use the remaining lab time for role-specific capstone work.
+
+## Required Supplements
+
+Every Mac lab should supplement the Apple Device Management chapter pair with:
+
+* `macOS Support Essentials` for practical troubleshooting, user support, and support technician workflow
+* `Modern Operating Systems` for deeper operating system concepts such as processes, memory, filesystems, I/O, security boundaries, and networking concepts
+* `The Practice of System and Network Administration` for how work should be executed: ticket hygiene, documentation, repeatability, escalation, change awareness, customer communication, and service improvement
+* the target Mac Support Specialist job requirements: Addigy, Jamf, JumpCloud, Okta, networking fundamentals, customer service, accurate documentation, escalation, and continuous service improvement
+
 ## Topic Focus
 
 Labs in this folder may cover:
@@ -59,16 +91,22 @@ Every Mac / Apple administration lab must also include:
 ## Example Lab Folder Names
 
 ```text
-lab-01-enterprise-mac-access-issue/
-lab-02-filevault-and-keychain-support/
-lab-03-macos-network-troubleshooting/
-lab-04-mdm-profile-review/
-lab-05-jamf-addigy-device-management-concepts/
-lab-06-jumpcloud-okta-identity-support-scenario/
+lab-01-apple-device-management-foundations/
+lab-02-macos-support-and-identity-basics/
+lab-03-device-enrolment-and-mdm-workflow/
+lab-04-configuration-profiles-and-policy-control/
+lab-05-filevault-gatekeeper-and-certificate-support/
+lab-06-jamf-addigy-jumpcloud-okta-concepts/
+lab-07-app-deployment-and-software-update-support/
+lab-08-macos-network-and-connectivity-troubleshooting/
+lab-09-logs-monitoring-and-escalation-evidence/
+lab-10-documentation-service-improvement-and-sops/
+lab-11-msp-client-support-scenario/
+lab-12-mac-support-specialist-capstone/
 ```
 
 ## Evidence Standard
 
 Mac support evidence should be documented clearly but safely. Do not commit serial numbers, real user names, asset tags, screenshots with private information, company data, or live configuration exports.
 
-Useful evidence includes support-ticket write-ups, customer updates, escalation notes, troubleshooting decision trees, network diagnostic notes, profile or MDM concept notes, and service improvement observations.
+Useful evidence includes support-ticket write-ups, customer updates, escalation notes, troubleshooting decision trees, network diagnostic notes, profile or MDM concept notes, OS-depth notes, and service improvement observations.
