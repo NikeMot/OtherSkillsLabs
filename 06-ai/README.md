@@ -2,11 +2,28 @@
 
 ## Purpose
 
-This folder contains the main AI Engineering pillar inside the `Mac and AI` track.
+This folder contains the cumulative AI Engineering pillar inside the `Mac and AI` track.
 
-The labs cover AI engineering, machine learning foundations, R and Python data preparation, LLMs, prompt engineering, retrieval workflows, AI agents, evaluation, observability, and small AI-enabled operations applications.
+The AI section is now a 48-lab cumulative course. Each AI lab builds on previous AI labs so that the work becomes one growing AI/data/operations system rather than disconnected exercises.
 
-The goal is to build junior AI engineer evidence without exaggerating what AI can do. The focus is useful, safe, explainable AI work for support, data, backend, platform, and SRE contexts.
+Mac is separate. The cumulative-build rule applies only to this AI section.
+
+The labs cover CS foundations, data engineering, R and Python data preparation, statistical learning, ML, LLMs, prompt engineering, retrieval workflows, AI agents, evaluation, observability, local deployment, Azure, AWS, GCP, and small AI-enabled operations applications.
+
+## Cumulative Build Rule
+
+Every AI lab must build on previous AI labs.
+
+Each AI lab must document:
+
+* previous lab dependencies used
+* new capability added
+* existing files, datasets, scripts, models, APIs, or documentation reused
+* integration point with the growing project
+* regression check showing previous functionality still works where relevant
+* updated architecture, data-flow, or component notes where relevant
+
+The cumulative project can be framed as an `AI Operations and Data Assistant` built with safe fictional or generated data.
 
 ## Target Job Rule
 
@@ -29,19 +46,24 @@ Every lab must include target job evidence for at least one of:
 
 ## Core Curriculum Rule
 
-Use `AI Engineering` as the backbone.
+Related topics should be learned together.
 
-One `AI Engineering` chapter should produce two labs.
+The AI section follows this learning order:
 
-The full AI course has 30 labs. This assumes 15 backbone chapters from `AI Engineering`.
+```text
+Labs 01-06 -> CS and engineering foundations
+Labs 07-18 -> Data engineering and R before AI
+Labs 19-28 -> ML and statistical learning
+Labs 29-38 -> LLMs, RAG, and agents
+Labs 39-46 -> Production AI across local, Azure, AWS, and GCP
+Labs 47-48 -> Capstone
+```
 
-If the available edition has a different chapter count, preserve the rule: one backbone chapter should produce two labs, and remaining labs should become capstone, review, or missing-coverage labs.
-
-See `docs/ai-curriculum-standard.md` for the full 30-lab curriculum.
+See `docs/ai-curriculum-standard.md` for the full 48-lab curriculum.
 
 ## Source Stack
 
-Primary source:
+Primary AI source:
 
 * `AI Engineering`
 
@@ -53,6 +75,10 @@ Supporting sources:
 * `An Introduction to Statistical Learning with R`
 * `R for Data Science`
 * `Practical Statistics for Data Scientists`
+* `Fundamentals of Data Engineering`
+* `Designing Data-Intensive Applications`
+* `Database Internals`
+* `Data Engineering Design Patterns`
 * `AI Systems Performance Engineering`
 * `Observability Engineering`
 * `Redefining Data Engineering with AI`
@@ -73,10 +99,28 @@ Where relevant, each AI lab should include:
 * CS foundation note
 * data engineering note
 * R note
-* AWS mapping or implementation option
+* local implementation evidence
 * Azure mapping or implementation option
+* AWS mapping or implementation option
 * GCP mapping or implementation option
 * SRE or operations evidence
+
+## Local and Multi-Cloud Rule
+
+Every major concept should be learned locally first.
+
+Cloud-relevant concepts must then be mapped across Azure, AWS, and GCP.
+
+The expected pattern is:
+
+```text
+1. local implementation
+2. Azure mapping or implementation
+3. AWS mapping or implementation
+4. GCP mapping or implementation
+```
+
+Not every lab needs a full deployment to all three clouds. However, every cloud-relevant lab must include a short Azure / AWS / GCP comparison. Dedicated cloud labs must include stronger implementation evidence.
 
 ## Manual-First Rule
 
@@ -90,26 +134,80 @@ AI assistance must not replace understanding, verification, or manual reasoning.
 
 Labs in this folder may cover:
 
+* local development environment
 * Python, NumPy, Pandas, R, and tidyverse for AI data preparation
-* data cleaning and feature engineering
+* CS foundations for AI systems
+* SQL, PostgreSQL, and data modelling
+* data ingestion, transformation, quality, metadata, and lineage
+* R visualisation, statistics, and reporting
 * supervised ML models
 * model evaluation and error analysis
 * R and Python model comparison
 * LLM foundations
-* prompt engineering for technical work
-* structured outputs
+* prompt engineering and structured outputs
 * retrieval-augmented generation
 * embeddings and semantic search
 * AI agents and tool-use boundaries
-* AI workflow design
 * evaluation datasets
 * hallucination checks
 * AI observability and monitoring
 * AI systems performance and cost thinking
-* AWS, Azure, and GCP service mapping
-* human approval points
+* local, Azure, AWS, and GCP implementation patterns
 * safe deployment thinking
 * small AI-enabled backend or SRE helper applications
+
+## Planned Lab Sequence
+
+```text
+01 local development environment
+02 CS introduction for AI
+03 algorithms for data and AI
+04 HTTP, REST, and FastAPI basics
+05 SQL and PostgreSQL foundations
+06 cloud foundations across Azure, AWS, and GCP
+07 data engineering lifecycle and source systems
+08 local data ingestion from CSV, JSON, or API
+09 storage design: files, tables, object storage
+10 SQL transformation and modelling
+11 R data wrangling and visualisation
+12 Python and R dataset comparison
+13 data quality checks and validation
+14 pipeline testing and repeatable execution
+15 metadata, lineage, and documentation
+16 monitoring and incident handling for pipelines
+17 data product and serving layer design
+18 data engineering review across local, Azure, AWS, and GCP
+19 EDA in Python and R
+20 practical statistics for AI datasets
+21 first supervised ML model
+22 feature engineering
+23 train/test validation and metrics
+24 classification and regression comparison
+25 error analysis and model limitations
+26 model evaluation report in Python and R
+27 local model serving with FastAPI
+28 ML workflow mapping across Azure ML, SageMaker, and Vertex AI
+29 LLM foundations and safe usage
+30 prompt engineering and structured outputs
+31 prompt evaluation and failure cases
+32 embeddings and semantic search
+33 retrieval index design
+34 RAG over runbooks, tickets, or lab notes
+35 RAG evaluation, citations, and hallucination checks
+36 AI agents: planning, tools, memory, and state
+37 agent workflow simulation with human approval
+38 agent safety, failure modes, and escalation
+39 local AI application end to end
+40 deploy AI app on Azure
+41 deploy AI app on AWS
+42 deploy AI app on GCP
+43 secrets, identity, and access control cross-cloud
+44 monitoring and observability cross-cloud
+45 performance, latency, throughput, and cost cross-cloud
+46 AI governance, data handling, and incident response
+47 capstone design: architecture, data, cloud, risk, evaluation
+48 capstone build: demo, monitoring, and interview story
+```
 
 ## Mandatory Career Layers
 
@@ -122,41 +220,6 @@ Every AI lab must also include:
 * recruiter-facing summary
 * interview explanation
 * personal reflection on responsible use
-
-## Example Lab Folder Names
-
-```text
-lab-01-ai-engineering-foundations-part-1/
-lab-02-ai-engineering-foundations-part-2/
-lab-03-python-and-r-data-preparation-for-ai-part-1/
-lab-04-python-and-r-data-preparation-for-ai-part-2/
-lab-05-first-ml-model-part-1/
-lab-06-first-ml-model-part-2/
-lab-07-model-evaluation-part-1/
-lab-08-model-evaluation-part-2/
-lab-09-llm-foundations-part-1/
-lab-10-llm-foundations-part-2/
-lab-11-prompt-engineering-part-1/
-lab-12-prompt-engineering-part-2/
-lab-13-embeddings-and-semantic-search-part-1/
-lab-14-embeddings-and-semantic-search-part-2/
-lab-15-rag-workflow-part-1/
-lab-16-rag-workflow-part-2/
-lab-17-ai-agents-part-1/
-lab-18-ai-agents-part-2/
-lab-19-ai-application-integration-part-1/
-lab-20-ai-application-integration-part-2/
-lab-21-ai-systems-performance-part-1/
-lab-22-ai-systems-performance-part-2/
-lab-23-ai-observability-part-1/
-lab-24-ai-observability-part-2/
-lab-25-ai-safety-and-governance-part-1/
-lab-26-ai-safety-and-governance-part-2/
-lab-27-ai-for-data-and-operations-part-1/
-lab-28-ai-for-data-and-operations-part-2/
-lab-29-junior-ai-engineer-capstone-part-1/
-lab-30-junior-ai-engineer-capstone-part-2/
-```
 
 ## Evidence Standard
 
