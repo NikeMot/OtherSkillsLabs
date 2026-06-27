@@ -296,23 +296,19 @@ Write 2 to 5 bullet points.
 * [ ] Diagram added if useful
 * [ ] Model, script, dashboard, or application output added if relevant
 * [ ] Career leverage output completed
-* [ ] Reflection completed
+* [ ] Seven reflection answers captured
 * [ ] No secrets or private data committed
 
 ---
 
 ## 23. Reflection Questions
 
-Answer these after completing the lab.
+Only these seven reflection questions should be asked after the lab. The learner answers these, and the final answers are added to the lab documentation.
 
-1. What technical skill did this lab develop?
-2. What SRE problem could this help with?
-3. What evidence proves the lab worked?
-4. What assumptions did I make?
-5. What would a stronger engineer check next?
-6. How would I explain this to a non-technical user?
-7. How would I explain this to a manager?
-8. How would I explain this in an interview?
-9. What does this lab prove about my career direction?
-10. How could this become a LinkedIn or portfolio update?
-11. What would make this output look more professional?
+1. What did I build, fix, analyse, or prove in this lab?
+2. What SRE, operations, or support problem could this help with?
+3. What evidence shows that the lab worked?
+4. What mistake, blocker, or uncertainty did I encounter, and how did I handle it?
+5. What would I improve if this were used in a real production environment?
+6. How would I explain this lab to a hiring manager or interviewer?
+7. What does this lab prove about my development toward SRE, platform, cloud, or operations roles?
