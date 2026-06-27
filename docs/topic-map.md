@@ -19,20 +19,30 @@ Every lab also includes thinking, social skill, branding, interview technique, a
 
 ## 01 — Mac / Apple Administration
 
+The Mac track uses `Apple Device Management` as the primary skeleton. Each lab covers two chapters from that book, supplemented by `macOS Support Essentials`, `Modern Operating Systems`, `The Practice of System and Network Administration`, and the Mac-focused MSP job requirements.
+
 Planned lab themes:
 
-1. Enterprise Mac access issue
-2. Local users and permissions
-3. FileVault support
-4. Keychain support
-5. macOS network troubleshooting
-6. Wi-Fi, DNS, VPN, and proxy checks
-7. Certificates on macOS
-8. Gatekeeper and app install support
-9. MDM profile review
-10. Apple Business Manager concepts
-11. Microsoft 365 and identity integration
-12. Mac support escalation pack
+1. Apple device management foundations — Apple Device Management chapters 1-2
+2. macOS support and identity basics — Apple Device Management chapters 3-4
+3. Device enrolment and MDM workflow — Apple Device Management chapters 5-6
+4. Configuration profiles and policy control — Apple Device Management chapters 7-8
+5. FileVault, Gatekeeper, certificates, and device-protection support — Apple Device Management chapters 9-10
+6. Jamf, Addigy, JumpCloud, and Okta concepts — Apple Device Management chapters 11-12
+7. App deployment and software update support — Apple Device Management chapters 13-14
+8. macOS network and connectivity troubleshooting — Apple Device Management chapters 15-16
+9. Logs, monitoring, and escalation evidence — Apple Device Management chapters 17-18
+10. Documentation, service improvement, and SOPs — Apple Device Management chapters 19-20
+11. MSP client support scenario — Apple Device Management chapters 21-22
+12. Mac Support Specialist capstone — Apple Device Management chapters 23-24 or final capstone coverage
+
+Every Mac lab must include:
+
+* Apple Device Management chapter-pair notes
+* macOS Support Essentials troubleshooting supplement
+* Modern Operating Systems depth note
+* system and network administration execution note
+* Mac-focused MSP job evidence: customer communication, documentation, escalation, networking, Addigy/Jamf/JumpCloud/Okta awareness, and service improvement
 
 ---
 
@@ -142,7 +152,7 @@ Use lowercase, hyphenated folder names.
 Examples:
 
 ```text
-01-mac-apple-administration/lab-01-enterprise-mac-access-issue/
+01-mac-apple-administration/lab-01-apple-device-management-foundations/
 02-computer-science-foundations/lab-01-sre-maths-and-reliability-basics/
 03-data-engineering/lab-01-query-support-ticket-data/
 04-aws/lab-01-aws-account-and-iam-basics/
