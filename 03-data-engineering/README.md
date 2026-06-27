@@ -1,21 +1,23 @@
-# 03 — Data Engineering
+# 03 — Data Engineering and R Thread
 
 ## Purpose
 
-This folder contains labs for SQL, databases, data modelling, pipelines, data quality, operational reporting, and small SRE-supporting applications.
+This folder contains the data engineering and R material that supports the `Mac and AI` track.
 
-The goal is to build junior data engineering evidence: pipeline development, ingestion, transformation, curation, dataset modelling, SQL, Python, version control, documentation, testing, data quality checks, monitoring, incident investigation, and performance/cost awareness.
+Data Engineering is no longer a separate visible headline track. It is an embedded data foundation for AI engineering.
+
+The goal is to preserve the original data engineering outcomes while using them to strengthen AI work: pipeline development, ingestion, transformation, curation, dataset modelling, SQL, Python, R, version control, documentation, testing, data quality checks, monitoring, incident investigation, and performance/cost awareness.
 
 ## Target Job Rule
 
-The junior data engineering job description shapes every lab.
+The junior data engineering job description still shapes the data-heavy AI labs.
 
-Every lab must include target job evidence for at least one of:
+Every data-heavy lab must include target job evidence for at least one of:
 
 * pipeline development and maintenance
 * ingestion, transformation, and curation
 * datasets and data models for analytics, reporting, AI, and data products
-* SQL and Python
+* SQL, Python, and R where useful
 * version control and development workflow
 * documentation and testing
 * data quality checks and validation
@@ -28,17 +30,31 @@ Every lab must include target job evidence for at least one of:
 
 Use `Fundamentals of Data Engineering` as the foundation.
 
-The first 11 labs are based on one chapter each from `Fundamentals of Data Engineering`.
+The first 11 data engineering outcomes are based on one chapter each from `Fundamentals of Data Engineering`.
 
-The next 12 labs are drill and deepening labs that repeat, combine, and deepen the manual skills from the first 11 labs.
+The next 12 outcomes are drill and deepening outcomes that repeat, combine, and deepen the manual skills from the first 11 outcomes.
 
-The final lab is a capstone project.
+The final outcome is a capstone-style contribution to the AI track.
 
-See `docs/data-engineering-curriculum-standard.md` for the full 24-lab curriculum.
+See `docs/data-engineering-curriculum-standard.md` for the full 24-outcome curriculum.
+
+## R Rule
+
+R is now part of the data and AI learning path.
+
+Drive resources found in the R folder:
+
+* `R for Data Science`
+* `Practical Statistics for Data Scientists`
+* `An Introduction to Statistical Learning with R`
+
+Use R for tidy data workflows, exploratory data analysis, visualisation, statistics, regression and classification practice, model comparison, and analysis reporting.
+
+Python remains the primary implementation language for AI engineering. R adds statistical and data-analysis depth.
 
 ## Manual-First AI Rule
 
-Learn and complete the data engineering task manually first.
+Learn and complete the data engineering, R, or statistical task manually first.
 
 Use `Redefining Data Engineering with AI` only afterwards to learn how AI can assist with documentation, design review, test generation, quality checks, metadata work, explanation, workflow acceleration, and AI-era data product thinking.
 
@@ -61,27 +77,46 @@ Augmentation sources:
 * `Database Internals: A Deep Dive into How Distributed Data Systems Work`
 * `Data Engineering Design Patterns`
 * `Redefining Data Engineering with AI`
+* `R for Data Science`
+* `Practical Statistics for Data Scientists`
+* `An Introduction to Statistical Learning with R`
 
 ## Coverage Rule
 
-The aim is to cover all relevant content from the chosen books across the full track.
+The aim is to cover all relevant content from the chosen books across the full `Mac and AI` track.
 
-Each lab must update a coverage ledger showing which chapter or major section was used, which lab covered it, and whether it is planned, completed, or needs review.
+Each data-heavy lab must update a coverage ledger showing which chapter or major section was used, which lab covered it, and whether it is planned, completed, or needs review.
 
-## Planned Lab Structure
+## Multi-Cloud Rule
+
+Every cloud-relevant data concept should map across AWS, Azure, and GCP where useful.
+
+Examples:
+
+* object storage: S3, Blob Storage, Cloud Storage
+* relational database: RDS, Azure SQL Database, Cloud SQL
+* analytics: Redshift/Athena, Synapse/Fabric concepts, BigQuery
+* monitoring: CloudWatch, Azure Monitor/Log Analytics, Cloud Monitoring
+* AI platform integration: Bedrock/SageMaker, Azure AI Foundry/Azure ML, Vertex AI
+
+## Planned Data Engineering Structure
 
 ```text
-Labs 01-11 -> Fundamentals of Data Engineering, one chapter per lab
-Labs 12-23 -> drill and deepening labs covering SQL, modelling, ingestion, transformation, quality, testing, database internals, performance, monitoring, governance, data products, and AI augmentation
-Lab 24     -> junior data engineering capstone project
+Outcomes 01-11 -> Fundamentals of Data Engineering, one chapter per outcome
+Outcomes 12-23 -> drill and deepening outcomes covering SQL, modelling, ingestion, transformation, quality, testing, database internals, performance, monitoring, governance, data products, R, and AI augmentation
+Outcome 24     -> junior data engineering capstone contribution to the AI track
 ```
 
 ## Topic Focus
 
-Labs in this folder may cover:
+Labs in this folder may support AI work through:
 
 * SQL for operational analysis
 * relational modelling
+* R tidy data workflows
+* R visualisation and reporting
+* practical statistics
+* statistical learning with R
 * data quality checks
 * source-system analysis
 * CSV/API to database ingestion
@@ -101,7 +136,7 @@ Labs in this folder may cover:
 
 ## Mandatory Career Layers
 
-Every data engineering lab must also include:
+Every data-heavy AI lab must also include:
 
 * target job evidence
 * analytical thinking
@@ -111,37 +146,8 @@ Every data engineering lab must also include:
 * interview explanation
 * personal reflection on accuracy, usefulness, and evidence quality
 
-## Example Lab Folder Names
-
-```text
-lab-01-data-engineering-described/
-lab-02-data-engineering-lifecycle/
-lab-03-good-data-architecture/
-lab-04-technology-selection-for-data-pipelines/
-lab-05-source-systems-and-operational-data/
-lab-06-data-storage-layouts/
-lab-07-data-ingestion-pipeline/
-lab-08-query-modelling-and-transformation/
-lab-09-serving-data-for-analytics-and-ai/
-lab-10-data-governance-quality-and-access/
-lab-11-future-of-data-engineering-and-ai-awareness/
-lab-12-sql-and-data-modelling-drill/
-lab-13-ingestion-drill/
-lab-14-transformation-and-curation-drill/
-lab-15-data-quality-validation-drill/
-lab-16-pipeline-testing-and-automation-drill/
-lab-17-storage-and-database-internals-drill/
-lab-18-query-performance-and-cost-drill/
-lab-19-batch-streaming-and-cdc-drill/
-lab-20-monitoring-and-incident-drill/
-lab-21-governance-lineage-and-documentation-drill/
-lab-22-data-product-and-serving-layer-drill/
-lab-23-ai-augmentation-after-manual-data-engineering/
-lab-24-junior-data-engineering-capstone/
-```
-
 ## Evidence Standard
 
-Data engineering evidence should include safe sample data, schema notes, query text, Python scripts, result summaries, row counts, assumptions, limitations, data quality checks, and where relevant a small application or script.
+Data engineering evidence should include safe sample data, schema notes, query text, Python scripts, R scripts, result summaries, row counts, assumptions, limitations, data quality checks, charts, and where relevant a small application or script.
 
 Use fictional, generated, personal, or safely sanitised data only.
