@@ -25,27 +25,23 @@ Each AI lab must include:
 
 The running cumulative project can be framed as an `AI Operations and Data Assistant` built with safe fictional or generated data.
 
-Across the 48 labs, this project should gradually gain:
+## Official Online Documentation Rule
 
-* local development environment
-* Python and R data analysis workflow
-* SQL database
-* data ingestion pipeline
-* data transformation and quality checks
-* dataset documentation and lineage
-* ML baseline models
-* model evaluation reports
-* LLM prompt workflows
-* embeddings and semantic search
-* RAG over lab notes, tickets, or runbooks
-* agent workflow simulation
-* API or small application interface
-* observability and evaluation logs
-* local deployment
-* Azure deployment or mapping
-* AWS deployment or mapping
-* GCP deployment or mapping
-* final capstone documentation and demo evidence
+The AI labs must follow `docs/official-online-documentation-standard.md`.
+
+Books provide depth and structure. Official online documentation keeps implementation details current.
+
+Every AI lab must include an `Official online documentation checked` section recording:
+
+| Field | What to record |
+| --- | --- |
+| Source | Official documentation source name |
+| URL | Documentation page used |
+| Version or date checked | Version number, release date, page date, or date accessed |
+| Lab decision affected | What the documentation changed, confirmed, or clarified |
+| Notes | Deprecation, preview status, version differences, or caveats |
+
+Use official vendor or project docs first for commands, APIs, SDKs, cloud services, model APIs, security settings, monitoring, pricing, quotas, or deployment behaviour.
 
 ## Cross-Cutting Requirements Rule
 
@@ -136,6 +132,18 @@ Supporting sources:
 14. `Redefining Data Engineering with AI` — AI-assisted data workflows, human-in-the-loop oversight, governance, and data product thinking
 15. `AI Agents: The Definitive Guide` — agent design, tools, planning, memory, orchestration, safety, and evaluation; verify file availability before lab documentation
 
+## Official Online Documentation Stack
+
+Use `docs/official-online-documentation-standard.md` as the central online documentation map.
+
+For AI labs, official online documentation should usually include the relevant items from:
+
+* Python, R, NumPy, pandas, scikit-learn, PostgreSQL, Docker, FastAPI, GitHub Actions, Streamlit, Prefect, or Dagster
+* OpenAI docs when OpenAI models, evals, prompting, agents, or safety are used
+* Microsoft Learn for Azure Foundry, Azure Machine Learning, Azure Monitor, Key Vault, App Service, Functions, Container Apps, Blob Storage, Azure SQL, and Entra ID
+* AWS docs for Bedrock, SageMaker AI, CloudWatch, Secrets Manager, IAM, S3, Lambda, ECS, EC2, RDS, Athena, and Redshift
+* Google Cloud docs for Gemini Enterprise Agent Platform / Vertex AI evolution, Cloud Run, Cloud Monitoring, Secret Manager, IAM, Cloud Storage, Cloud Functions, Compute Engine, Cloud SQL, and BigQuery
+
 ## Whole-Chapter and Coverage Rule
 
 Use whole chapters as references.
@@ -146,8 +154,9 @@ Every lab must record:
 * the supporting chapter or major section from each additional source, where relevant
 * why each source was used
 * how the source shaped the task
+* official online documentation checked
 
-The aim is to cover all relevant content from the chosen books across the full 48-lab course.
+The aim is to cover all relevant content from the chosen books across the full 48-lab course while keeping implementation details current with official documentation.
 
 Maintain a coverage ledger so every chapter or major section from the chosen books is assigned to at least one lab.
 
@@ -157,7 +166,7 @@ The coverage ledger should track:
 | --- | --- | --- | --- | --- |
 | Book name | Chapter number and title | Lab number | planned / completed / needs review | How it was used |
 
-No copied book text should be committed to the repository.
+No copied book text or large copied documentation extracts should be committed to the repository.
 
 ## Embedded Layer Rule
 
@@ -201,7 +210,7 @@ Examples:
 | Analytics | local DuckDB / PostgreSQL | Synapse, Fabric concepts | Athena, Redshift | BigQuery |
 | Secrets | local env file pattern, never committed | Key Vault | Secrets Manager, Parameter Store | Secret Manager |
 | Monitoring | local logs and metrics | Azure Monitor, Log Analytics | CloudWatch | Cloud Monitoring |
-| AI platform | local model/API workflow | Azure AI Foundry, Azure Machine Learning | Bedrock, SageMaker | Vertex AI |
+| AI platform | local model/API workflow | Azure AI Foundry, Azure Machine Learning | Bedrock, SageMaker | Vertex AI / Gemini Enterprise Agent Platform |
 
 ## Planned 48-Lab Sequence
 
@@ -246,7 +255,7 @@ Examples:
 | 25 | `lab-25-error-analysis-and-model-limitations/` | model errors, false positives/negatives, limitations, and improvement plan |
 | 26 | `lab-26-model-evaluation-report-python-r/` | evaluation report using Python and R perspectives |
 | 27 | `lab-27-local-model-serving-with-fastapi/` | local model-serving endpoint added to the existing API |
-| 28 | `lab-28-ml-workflow-azure-ml-sagemaker-vertex-ai/` | local ML workflow mapped to Azure ML, SageMaker, and Vertex AI |
+| 28 | `lab-28-ml-workflow-azure-ml-sagemaker-vertex-ai/` | local ML workflow mapped to Azure ML, SageMaker, and Vertex AI / Gemini Enterprise Agent Platform documentation as relevant |
 
 ### Phase 4 — LLMs, RAG, and Agents
 
@@ -304,6 +313,7 @@ Each completed AI lab should include:
 * regression check where relevant
 * source chapter or section used
 * supporting reference table
+* official online documentation checked
 * coverage ledger update
 * embedded-layer table where relevant
 * cross-cutting requirements checklist where relevant
@@ -326,4 +336,4 @@ Each completed AI lab should include:
 
 Use fictional, generated, personal, or safely sanitised data only.
 
-Do not commit copied book text, live workplace material, private records, credentials, or sensitive screenshots.
+Do not commit copied book text, large copied documentation extracts, live workplace material, private records, credentials, or sensitive screenshots.
