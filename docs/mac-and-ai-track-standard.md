@@ -57,6 +57,16 @@ The Mac Administration pillar continues to use:
 
 Mac labs do not need to build into the AI cumulative project.
 
+## Apple Account Constraint for Mac Labs
+
+The learner is currently unable to use an Apple Account for lab work.
+
+Mac labs must not require signing in with a personal Apple Account.
+
+Any task requiring Apple Account sign-in, iCloud, Find My, App Store purchasing, Apple Business Manager access, Managed Apple Accounts, automated device enrolment, or live MDM tenant enrolment must be handled as conceptual or documentation-based work only.
+
+Hands-on Mac labs should prioritise local macOS account work, safe local settings, command-line checks, logs, networking diagnostics, filesystem inspection, configuration-profile analysis, official documentation review, support-ticket write-ups, escalation notes, and service-improvement evidence.
+
 ## Pillar 2 — AI Engineering
 
 The AI Engineering pillar is a cumulative 48-lab course.
@@ -221,6 +231,6 @@ Every lab should include this table:
 
 A Mac and AI lab is complete only when it preserves the right scope.
 
-For Mac labs, this means Mac support, Apple device management, troubleshooting, documentation, job evidence, and official Apple documentation checks.
+For Mac labs, this means Mac support, Apple device management, troubleshooting, documentation, job evidence, official Apple documentation checks, and conceptual handling of Apple Account or Apple Business Manager workflows that cannot be completed hands-on.
 
 For AI labs, this means cumulative AI Engineering plus the relevant CS, data, R, local, multi-cloud, operations, software engineering, MLOps/LLMOps, security, evaluation, orchestration, governance, product-interface, and official online documentation layers.
