@@ -45,6 +45,27 @@ Lab 12 -> Apple Device Management chapters 23-24 or final capstone coverage
 
 If the edition being used has fewer or more chapters, keep the same rule: two chapters per lab until the book is complete, then use the remaining lab time for role-specific capstone work.
 
+## Apple Account Constraint
+
+The learner is currently unable to use an Apple Account for lab work.
+
+Do not design Mac labs that require signing in with a personal Apple Account.
+
+Any lab task that would require Apple Account sign-in, iCloud, Find My, App Store purchasing, Apple Business Manager access, Managed Apple Accounts, automated device enrolment, or live MDM tenant enrolment must be handled as conceptual or documentation-based work only.
+
+For those topics, acceptable evidence includes:
+
+* official documentation review
+* architecture or workflow diagram
+* support scenario write-up
+* decision record
+* risk note
+* escalation note
+* comparison of Jamf, Addigy, JumpCloud, Okta, Apple Business Manager, and MDM concepts
+* simulated ticket or customer-support explanation
+
+Hands-on Mac labs should prioritise what can be done with a local macOS account, safe local settings, command-line checks, logs, networking diagnostics, filesystem inspection, configuration-profile analysis, and documentation.
+
 ## Official Online Documentation Rule
 
 Every Mac lab must follow `docs/official-online-documentation-standard.md`.
@@ -85,13 +106,13 @@ Labs in this folder may cover:
 * Gatekeeper
 * software updates
 * Wi-Fi, VPN, DNS, proxy, and certificate issues
-* Apple Business Manager
-* MDM enrolment concepts
+* Apple Business Manager concepts, handled conceptually unless access is available
+* MDM enrolment concepts, handled conceptually unless access is available
 * Addigy and Jamf concepts
 * JumpCloud and Okta concepts
 * configuration profiles
-* app deployment
-* Microsoft 365 and identity integration
+* app deployment concepts and non-App-Store local installation where possible
+* Microsoft 365 and identity integration concepts
 * support ticket documentation
 * customer update messages
 * escalation notes
@@ -127,6 +148,6 @@ lab-12-mac-support-specialist-capstone/
 
 ## Evidence Standard
 
-Mac support evidence should be documented clearly but safely. Do not commit serial numbers, real user names, asset tags, screenshots with private information, company data, or live configuration exports.
+Mac support evidence should be documented clearly but safely. Do not commit serial numbers, real user names, asset tags, screenshots with private information, company data, live configuration exports, Apple Account details, iCloud details, or personal Apple service data.
 
-Useful evidence includes support-ticket write-ups, customer updates, escalation notes, troubleshooting decision trees, network diagnostic notes, profile or MDM concept notes, OS-depth notes, official documentation checks, and service improvement observations.
+Useful evidence includes support-ticket write-ups, customer updates, escalation notes, troubleshooting decision trees, network diagnostic notes, profile or MDM concept notes, OS-depth notes, official documentation checks, conceptual Apple Account or ABM workflow notes, and service improvement observations.
