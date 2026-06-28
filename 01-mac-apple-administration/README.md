@@ -45,6 +45,25 @@ Lab 12 -> Apple Device Management chapters 23-24 or final capstone coverage
 
 If the edition being used has fewer or more chapters, keep the same rule: two chapters per lab until the book is complete, then use the remaining lab time for role-specific capstone work.
 
+## Official Online Documentation Rule
+
+Every Mac lab must follow `docs/official-online-documentation-standard.md`.
+
+Books provide structure, but Apple platform behaviour changes. Official Apple documentation keeps the lab current.
+
+Every Mac lab must include an `Official online documentation checked` section.
+
+Use official Apple documentation first for deployment, MDM, Apple Business Manager, macOS user support, device management payloads, security settings, software update behaviour, identity integration, FileVault, networking, certificates, and supervision/enrolment behaviour.
+
+Primary official online sources:
+
+| Area | Official documentation |
+| --- | --- |
+| Apple deployment and MDM | https://support.apple.com/guide/deployment/welcome/web |
+| Apple Business Manager | https://support.apple.com/guide/apple-business-manager/welcome/web |
+| Mac user and support workflows | https://support.apple.com/guide/mac-help/welcome/mac |
+| Apple device management API and payloads | https://developer.apple.com/documentation/devicemanagement |
+
 ## Required Supplements
 
 Every Mac lab should supplement the Apple Device Management chapter pair with:
@@ -52,6 +71,7 @@ Every Mac lab should supplement the Apple Device Management chapter pair with:
 * `macOS Support Essentials` for practical troubleshooting, user support, and support technician workflow
 * `Modern Operating Systems` for deeper operating system concepts such as processes, memory, filesystems, I/O, security boundaries, and networking concepts
 * `The Practice of System and Network Administration` for how work should be executed: ticket hygiene, documentation, repeatability, escalation, change awareness, customer communication, and service improvement
+* official Apple online documentation for current platform behaviour and vendor-supported guidance
 * the target Mac Support Specialist job requirements: Addigy, Jamf, JumpCloud, Okta, networking fundamentals, customer service, accurate documentation, escalation, and continuous service improvement
 
 ## Topic Focus
@@ -109,4 +129,4 @@ lab-12-mac-support-specialist-capstone/
 
 Mac support evidence should be documented clearly but safely. Do not commit serial numbers, real user names, asset tags, screenshots with private information, company data, or live configuration exports.
 
-Useful evidence includes support-ticket write-ups, customer updates, escalation notes, troubleshooting decision trees, network diagnostic notes, profile or MDM concept notes, OS-depth notes, and service improvement observations.
+Useful evidence includes support-ticket write-ups, customer updates, escalation notes, troubleshooting decision trees, network diagnostic notes, profile or MDM concept notes, OS-depth notes, official documentation checks, and service improvement observations.
