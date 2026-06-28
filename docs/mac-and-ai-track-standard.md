@@ -31,6 +31,16 @@ The learner should still cover the intended outcomes from:
 
 The difference is organisation: these become parts of a single Mac and AI track rather than separate headline tracks.
 
+## Official Online Documentation Rule
+
+The track must follow `docs/official-online-documentation-standard.md`.
+
+Books provide depth and structure. Official online documentation keeps labs current.
+
+Every lab should include an `Official online documentation checked` section. This applies to both Mac labs and AI labs.
+
+Use official vendor or project documentation first for commands, APIs, SDKs, cloud services, identity, security settings, monitoring, deployment behaviour, model APIs, pricing, quotas, and deprecated or renamed features.
+
 ## Pillar 1 — Mac Administration
 
 The Mac labs remain unchanged and separate.
@@ -43,6 +53,7 @@ The Mac Administration pillar continues to use:
 * `Modern Operating Systems` for operating-system depth
 * `The Practice of System and Network Administration` for operational execution discipline
 * the Mac-focused MSP job advert for role evidence
+* official Apple online documentation for current deployment, MDM, Apple Business Manager, Mac support, and device management payload behaviour
 
 Mac labs do not need to build into the AI cumulative project.
 
@@ -167,7 +178,7 @@ The labs may use one platform hands-on at a time, but the documentation must inc
 | Secrets | local env pattern, never committed | Key Vault | Secrets Manager, Parameter Store | Secret Manager |
 | Monitoring | local logs and metrics | Azure Monitor, Log Analytics | CloudWatch | Cloud Monitoring |
 | Identity and access | local users / app config | Entra ID, Azure RBAC | IAM | IAM |
-| AI platform | local model/API workflow | Azure AI Foundry, Azure Machine Learning | Bedrock, SageMaker | Vertex AI |
+| AI platform | local model/API workflow | Azure AI Foundry, Azure Machine Learning | Bedrock, SageMaker | Vertex AI / Gemini Enterprise Agent Platform |
 
 ## Required Embedded-Layer Table
 
@@ -198,10 +209,18 @@ Every AI lab should include this checklist when relevant:
 | Governance | Data dictionary, lineage, model card, risk register, or approval note |
 | Product/interface layer | CLI, API, dashboard, report, or demo improvement |
 
+## Required Official Documentation Table
+
+Every lab should include this table:
+
+| Source | URL | Version or date checked | Lab decision affected | Notes |
+| --- | --- | --- | --- | --- |
+| Official documentation source | Official documentation URL | Version/date/access date | What it confirmed or changed | Deprecation, preview, caveat, or version note |
+
 ## Completion Standard
 
 A Mac and AI lab is complete only when it preserves the right scope.
 
-For Mac labs, this means Mac support, Apple device management, troubleshooting, documentation, and job evidence.
+For Mac labs, this means Mac support, Apple device management, troubleshooting, documentation, job evidence, and official Apple documentation checks.
 
-For AI labs, this means cumulative AI Engineering plus the relevant CS, data, R, local, multi-cloud, operations, software engineering, MLOps/LLMOps, security, evaluation, orchestration, governance, and product-interface layers.
+For AI labs, this means cumulative AI Engineering plus the relevant CS, data, R, local, multi-cloud, operations, software engineering, MLOps/LLMOps, security, evaluation, orchestration, governance, product-interface, and official online documentation layers.
