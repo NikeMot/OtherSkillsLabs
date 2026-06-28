@@ -25,6 +25,16 @@ Each AI lab must document:
 
 The cumulative project can be framed as an `AI Operations and Data Assistant` built with safe fictional or generated data.
 
+## Official Online Documentation Rule
+
+Every AI lab must follow `docs/official-online-documentation-standard.md`.
+
+Books provide depth and structure. Official online documentation keeps commands, APIs, SDKs, cloud services, security settings, pricing, deployment options, and model behaviour current.
+
+Each AI lab must include an `Official online documentation checked` section.
+
+Use official documentation first for Python, R, NumPy, pandas, scikit-learn, PostgreSQL, Docker, FastAPI, GitHub Actions, Streamlit, orchestration tools, OpenAI, Azure, AWS, and Google Cloud.
+
 ## Cross-Cutting Requirements
 
 The 48-lab AI course must also include the mandatory cross-cutting requirements in `docs/ai-cross-cutting-requirements.md`.
@@ -100,9 +110,21 @@ Supporting sources:
 * `Redefining Data Engineering with AI`
 * `AI Agents: The Definitive Guide`
 
+## Official Documentation Stack
+
+Use the online documentation standard for the full source list.
+
+Common official online sources include:
+
+* Python, R, NumPy, pandas, scikit-learn, PostgreSQL, Docker, FastAPI, GitHub Actions, Streamlit, Prefect, and Dagster
+* OpenAI API, prompting, evals, agents, and safety documentation where OpenAI tooling is used
+* Microsoft Learn for Azure Foundry, Azure Machine Learning, Azure Monitor, Key Vault, App Service, Functions, Container Apps, Blob Storage, Azure SQL, and Entra ID
+* AWS documentation for Bedrock, SageMaker AI, CloudWatch, Secrets Manager, IAM, S3, Lambda, ECS, EC2, RDS, Athena, and Redshift
+* Google Cloud documentation for Gemini Enterprise Agent Platform / Vertex AI evolution, Cloud Run, Cloud Monitoring, Secret Manager, IAM, Cloud Storage, Cloud Functions, Compute Engine, Cloud SQL, and BigQuery
+
 ## Coverage Rule
 
-The aim is to cover all relevant content from the chosen books across the full track.
+The aim is to cover all relevant content from the chosen books across the full track while keeping implementation details current with official documentation.
 
 Each lab must update a coverage ledger showing which chapter or major section was used, which lab covered it, and whether it is planned, completed, or needs review.
 
@@ -239,6 +261,6 @@ Every AI lab must also include:
 
 ## Evidence Standard
 
-AI evidence should include safe test inputs, expected outputs, actual outputs, pass/fail criteria, evaluation results, failure cases, and limitations.
+AI evidence should include safe test inputs, expected outputs, actual outputs, pass/fail criteria, evaluation results, failure cases, official online documentation checked, and limitations.
 
 Use fictional, generated, personal, or safely sanitised data only.
