@@ -35,6 +35,16 @@ The difference is organisation: CS, data engineering, R, and cloud now support t
 
 ---
 
+## Official Online Documentation Rule
+
+Every lab must follow `docs/official-online-documentation-standard.md`.
+
+Each lab must include an `Official online documentation checked` section so implementation details stay current.
+
+This applies to both Mac labs and AI labs.
+
+---
+
 ## AI Cumulative Build Rule
 
 This rule applies only to the AI section.
@@ -67,7 +77,7 @@ Every AI lab should include relevant evidence for:
 
 ## 01 — Mac / Apple Administration
 
-The Mac track uses `Apple Device Management` as the primary skeleton. Each lab covers two chapters from that book, supplemented by `macOS Support Essentials`, `Modern Operating Systems`, `The Practice of System and Network Administration`, and the Mac-focused MSP job requirements.
+The Mac track uses `Apple Device Management` as the primary skeleton. Each lab covers two chapters from that book, supplemented by `macOS Support Essentials`, `Modern Operating Systems`, `The Practice of System and Network Administration`, official Apple online documentation, and the Mac-focused MSP job requirements.
 
 Planned lab themes:
 
@@ -90,6 +100,7 @@ Every Mac lab must include:
 * macOS Support Essentials troubleshooting supplement
 * Modern Operating Systems depth note
 * system and network administration execution note
+* official Apple documentation check
 * Mac-focused MSP job evidence: customer communication, documentation, escalation, networking, Addigy/Jamf/JumpCloud/Okta awareness, and service improvement
 
 ---
@@ -161,7 +172,7 @@ The learner may practise hands-on with one cloud at a time, but documentation sh
 | Secrets | local env pattern, never committed | Key Vault | Secrets Manager, Parameter Store | Secret Manager |
 | Monitoring | local logs and metrics | Azure Monitor, Log Analytics | CloudWatch | Cloud Monitoring |
 | Identity and access | local users / app config | Entra ID, Azure RBAC | IAM | IAM |
-| AI platform | local model/API workflow | Azure AI Foundry, Azure ML | Bedrock, SageMaker | Vertex AI |
+| AI platform | local model/API workflow | Azure AI Foundry, Azure ML | Bedrock, SageMaker | Vertex AI / Gemini Enterprise Agent Platform |
 
 ---
 
@@ -200,7 +211,7 @@ Planned lab themes:
 25. Error analysis and model limitations
 26. Model evaluation report in Python and R
 27. Local model serving with FastAPI
-28. ML workflow mapping across Azure ML, SageMaker, and Vertex AI
+28. ML workflow mapping across Azure ML, SageMaker, and Vertex AI / Gemini Enterprise Agent Platform
 29. LLM foundations and safe usage
 30. Prompt engineering and structured outputs
 31. Prompt evaluation and failure cases
@@ -232,6 +243,7 @@ Every AI lab must include:
 * regression check where relevant
 * source chapter or section used
 * supporting reference notes
+* official online documentation checked
 * coverage ledger update
 * CS foundation note where relevant
 * data engineering note where relevant
@@ -270,4 +282,5 @@ A lab is complete only when it includes:
 * communication output
 * career leverage output
 * production considerations
+* official online documentation checked
 * reflection questions
