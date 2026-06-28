@@ -4,7 +4,17 @@
 
 This document defines how the lab series should be run.
 
-The learner should focus on solving the lab. Documentation structure, write-up formatting, evidence organisation, and repository upload can be handled after the lab is completed.
+The learner focuses on completing the lab and taking manual notes privately. The repository contains the lab requirements, scenario, learning structure, checks, and completion framework.
+
+The learner does not need to submit raw evidence, screenshots, command output, or reflection answers back into the chat.
+
+## Current Workflow Rule
+
+When the learner asks for a new lab, the lab should be written and uploaded to the repository as the working lab requirement and output structure.
+
+When the learner says the lab is done, no evidence handoff is required. The learner is already answering the questions and recording evidence in personal manual notes.
+
+Do not ask for raw evidence, screenshots, command outputs, or reflection answers unless the learner explicitly asks for review, troubleshooting, or documentation help.
 
 ## Responsibilities
 
@@ -14,58 +24,68 @@ The learner is responsible for:
 
 * completing the technical lab tasks
 * running the required checks
-* capturing or describing evidence
-* reporting blockers, mistakes, and outcomes honestly
-* answering the seven reflection questions after the lab
+* taking manual notes privately
+* recording evidence privately where useful
+* answering reflection questions in personal notes
+* keeping sensitive data out of the repository
+* asking for help only when review, troubleshooting, clarification, or rewrite support is needed
 
 ### Documentation responsibilities
 
 The documentation process should handle:
 
 * creating the lab folder structure
-* writing the lab summary
-* organising evidence
-* recording commands and methods used
-* documenting issues and decisions
-* writing production considerations
-* producing career leverage outputs
-* formatting the final Markdown
-* committing or uploading the completed lab documentation to the repository
+* writing scenario-led lab requirements
+* explaining the corporate or production context
+* defining requirements, constraints, assumptions, deliverables, and verification checks
+* including official online documentation checks
+* including production considerations and career leverage sections
+* formatting the Markdown clearly
+* committing or uploading the lab document to the repository
 
 ## Reflection Rule
 
-Only seven reflection questions should be asked at the end of each lab.
+Reflection questions remain inside the lab document.
 
-The seven questions are:
+They should not be asked again in chat by default.
 
-1. What did I build, fix, analyse, or prove in this lab?
-2. What SRE, operations, or support problem could this help with?
-3. What evidence shows that the lab worked?
-4. What mistake, blocker, or uncertainty did I encounter, and how did I handle it?
-5. What would I improve if this were used in a real production environment?
-6. How would I explain this lab to a hiring manager or interviewer?
-7. What does this lab prove about my development toward SRE, platform, cloud, or operations roles?
+The learner answers them in personal manual notes.
+
+If the learner explicitly asks for help with reflection answers, use the lab's reflection questions as the basis for support.
 
 ## Evidence Rule
 
-The learner does not need to write a polished report during the lab.
+The repository should not depend on the learner sending raw evidence into the chat.
 
-Rough notes, command output, screenshots with sensitive data removed, filenames, errors, and short explanations are acceptable as raw evidence. These can be converted into polished documentation later.
+Lab documents should include evidence sections, verification tables, and checklists so the learner knows what to capture manually.
+
+Do not invent evidence or claim that a command passed unless the learner has explicitly provided that result.
+
+If a lab completion note is created without submitted evidence, it should state that evidence and reflections were recorded by the learner in manual notes, not reproduced in the repository.
 
 ## Repository Rule
 
-No secrets, company data, private records, API keys, cloud credentials, copyrighted PDFs, or sensitive screenshots should be committed.
+No secrets, company data, private records, API keys, cloud credentials, copyrighted PDFs, Apple Account details, iCloud details, serial numbers, or sensitive screenshots should be committed.
 
-All lab evidence should use fictional, personal, or safely sanitised data.
+All repository examples should use fictional, personal, conceptual, or safely sanitised data.
 
 ## Final Lab Output
 
-A completed lab should end with:
+A lab document should include:
 
-* a clean lab write-up
-* verification evidence
-* issues and decisions
+* a clear scenario
+* corporate or production context
+* requirements
+* constraints
+* assumptions
+* deliverables
+* implementation tasks
+* key commands or checks where useful
+* verification table
+* issues and decisions sections
 * production considerations
 * career leverage output
-* the seven reflection answers
-* a clean commit or upload to the repository
+* reflection questions
+* official online documentation checked section
+
+The lab document may remain requirements-led rather than evidence-filled unless the learner explicitly asks for a final evidence write-up.
