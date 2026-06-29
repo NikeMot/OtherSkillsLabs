@@ -8,6 +8,16 @@ The learner focuses on completing the lab and taking manual notes privately. The
 
 The learner does not need to submit raw evidence, screenshots, command output, or reflection answers back into the chat.
 
+## One-Hour Lab Rule
+
+Normal labs should follow `docs/one-hour-lab-standard.md`.
+
+Each normal lab should be designed for approximately 60 minutes so the learner can complete multiple labs per day.
+
+A lab should teach one clear concept, produce one useful piece of evidence, and explain how the concept fits into a real support, operations, engineering, or corporate environment.
+
+Capstones and review labs may take longer, but they must be clearly marked as capstone, review, or multi-session labs.
+
 ## Current Workflow Rule
 
 When the learner asks for a new lab, the lab should be written and uploaded to the repository as the working lab requirement and output structure.
@@ -35,9 +45,9 @@ The learner is responsible for:
 The documentation process should handle:
 
 * creating the lab folder structure
-* writing scenario-led lab requirements
+* writing short scenario-led lab requirements
 * explaining the corporate or production context
-* defining requirements, constraints, assumptions, deliverables, and verification checks
+* defining a small number of requirements, constraints, assumptions, deliverables, and verification checks
 * including official online documentation checks
 * including production considerations and career leverage sections
 * formatting the Markdown clearly
@@ -71,21 +81,17 @@ All repository examples should use fictional, personal, conceptual, or safely sa
 
 ## Final Lab Output
 
-A lab document should include:
+A normal one-hour lab document should include:
 
 * a clear scenario
-* corporate or production context
-* requirements
-* constraints
-* assumptions
-* deliverables
-* implementation tasks
+* short corporate or production context
+* 3-6 requirements
+* 3-5 constraints
+* 3-5 focused tasks
 * key commands or checks where useful
-* verification table
-* issues and decisions sections
-* production considerations
-* career leverage output
-* reflection questions
+* a compact verification table
+* short production considerations
+* seven reflection questions
 * official online documentation checked section
 
 The lab document may remain requirements-led rather than evidence-filled unless the learner explicitly asks for a final evidence write-up.
