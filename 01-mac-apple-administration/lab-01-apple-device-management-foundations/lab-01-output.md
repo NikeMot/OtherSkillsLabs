@@ -4,7 +4,11 @@
 
 **Estimated time:** 60 minutes  
 **Topic area:** macOS support, Apple device management concepts, baseline evidence  
-**Status:** Not started / In progress / Completed
+**Status:** Completed
+
+### Completion Note
+
+The learner completed this lab and recorded evidence, notes, and reflection answers privately in manual notes. Raw evidence is not reproduced in this repository.
 
 ### Objective
 
@@ -46,12 +50,12 @@ The hands-on part is local inspection only.
 
 | ID | Requirement | Status |
 | --- | --- | --- |
-| R1 | Do not use Apple Account, iCloud, ABM, App Store, or live MDM | Not started |
-| R2 | Capture macOS version and local user context | Not started |
-| R3 | Check whether the Mac appears MDM-enrolled or has configuration profiles | Not started |
-| R4 | Capture FileVault, Gatekeeper, and basic network identity | Not started |
-| R5 | Write a short corporate support note in manual notes | Not started |
-| R6 | Complete an official Apple documentation check | Not started |
+| R1 | Do not use Apple Account, iCloud, ABM, App Store, or live MDM | Completed |
+| R2 | Capture macOS version and local user context | Completed in manual notes |
+| R3 | Check whether the Mac appears MDM-enrolled or has configuration profiles | Completed in manual notes |
+| R4 | Capture FileVault, Gatekeeper, and basic network identity | Completed in manual notes |
+| R5 | Write a short corporate support note in manual notes | Completed in manual notes |
+| R6 | Complete an official Apple documentation check | Completed in manual notes |
 
 ---
 
@@ -181,16 +185,16 @@ Use this short structure:
 
 | Check | Result |
 | --- | --- |
-| Apple Account and iCloud were not used | Pass / Fail |
-| macOS version captured | Pass / Fail |
-| Local user context captured | Pass / Fail |
-| MDM enrolment status checked | Pass / Fail |
-| Configuration profile status checked | Pass / Fail |
-| FileVault status checked | Pass / Fail |
-| Gatekeeper status checked | Pass / Fail |
-| Network identity checked | Pass / Fail |
-| Official documentation checked | Pass / Fail |
-| Corporate support note written in manual notes | Pass / Fail |
+| Apple Account and iCloud were not used | Recorded privately |
+| macOS version captured | Recorded privately |
+| Local user context captured | Recorded privately |
+| MDM enrolment status checked | Recorded privately |
+| Configuration profile status checked | Recorded privately |
+| FileVault status checked | Recorded privately |
+| Gatekeeper status checked | Recorded privately |
+| Network identity checked | Recorded privately |
+| Official documentation checked | Recorded privately |
+| Corporate support note written in manual notes | Recorded privately |
 
 ---
 
@@ -208,17 +212,17 @@ inspect first -> document state -> understand management status -> escalate or a
 
 ## Completion Checklist
 
-* [ ] I completed the checks in about one hour
-* [ ] I did not use Apple Account or iCloud
-* [ ] I did not change security or management settings
-* [ ] I recorded manual notes privately
-* [ ] I answered the reflection questions privately
+* [x] I completed the checks in about one hour
+* [x] I did not use Apple Account or iCloud
+* [x] I did not change security or management settings
+* [x] I recorded manual notes privately
+* [x] I answered the reflection questions privately
 
 ---
 
 ## Reflection Questions
 
-Answer these in manual notes.
+Answered in manual notes.
 
 1. What problem does a Mac baseline solve in a real MSP or corporate environment?
 2. What is the difference between a local macOS account, an Apple Account, and a Managed Apple Account?
